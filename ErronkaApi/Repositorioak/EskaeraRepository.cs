@@ -16,6 +16,11 @@ namespace ErronkaApi.Repositorioak
             _sessionFactory = sessionFactory;
         }
 
+        public EskaeraRepository()
+        {
+            
+        }
+
         private Eskaera? GetEskaera(NHSession session, int id)
             => session.Get<Eskaera>(id);
 
@@ -25,7 +30,7 @@ namespace ErronkaApi.Repositorioak
         private Mahaia? GetMahaia(NHSession session, int id)
             => session.Get<Mahaia>(id);
 
-        private EskaeraDTO MapToEskaeraDTO(Eskaera e)
+        public virtual EskaeraDTO MapToEskaeraDTO(Eskaera e)
         {
             return new EskaeraDTO
             {
@@ -38,7 +43,7 @@ namespace ErronkaApi.Repositorioak
             };
         }
 
-        private EskaeraLortuDTO MapToEskaeraLortuDTO(EskaeraProduktuak ep)
+        public virtual EskaeraLortuDTO MapToEskaeraLortuDTO(EskaeraProduktuak ep)
         {
             return new EskaeraLortuDTO
             {
@@ -49,7 +54,7 @@ namespace ErronkaApi.Repositorioak
             };
         }
 
-        public (bool success, string? error, int? data, List<string>? details)
+        public virtual (bool success, string? error, int? data, List<string>? details)
             SortuEskaera(EskaeraSortuDTO dto)
         {
             using var session = _sessionFactory.OpenSession();
@@ -114,7 +119,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, List<EskaeraDTO>? data)
+        public virtual (bool success, string? error, List<EskaeraDTO>? data)
             LortuEskaerak()
         {
             try
@@ -135,7 +140,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, List<EskaeraLortuDTO>? data)
+        public virtual (bool success, string? error, List<EskaeraLortuDTO>? data)
             LortuEskaeraProduktuak(int eskaeraId)
         {
             try
@@ -163,7 +168,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error) EzabatuEskaera(int eskaeraId)
+        public virtual (bool success, string? error) EzabatuEskaera(int eskaeraId)
         {
             using var session = _sessionFactory.OpenSession();
             using var tx = session.BeginTransaction();
@@ -193,7 +198,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, int? data)
+        public virtual (bool success, string? error, int? data)
             LortuMahaiKapazitatea(int mahaiaId)
         {
             try
@@ -212,7 +217,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, List<string>? details)
+        public virtual (bool success, string? error, List<string>? details)
             EguneratuEskaera(int eskaeraId, EskaeraEguneratuDTO dto)
         {
             using var session = _sessionFactory.OpenSession();
@@ -237,7 +242,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error)
+        public virtual (bool success, string? error)
             EguneratuSukaldeaEgoera(int eskaeraId, string egoera)
         {
             using var session = _sessionFactory.OpenSession();
@@ -262,7 +267,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error)
+        public virtual (bool success, string? error)
             OrdaintzeraBidali(int eskaeraId)
         {
             using var session = _sessionFactory.OpenSession();
@@ -287,7 +292,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, string? path)
+        public virtual (bool success, string? error, string? path)
             SortuFaktura(int eskaeraId)
         {
             using var session = _sessionFactory.OpenSession();
@@ -378,7 +383,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, List<EskaeraDTO>? data)
+        public virtual (bool success, string? error, List<EskaeraDTO>? data)
             LortuEskaerakOrdaintzeko()
         {
             try

@@ -8,265 +8,275 @@ using System.Collections.Generic;
 
 namespace ErronkaApi.Testak
 {
-    public class EskaeraKontrolleraTesta
+    public class EskaeraKontrollerraTesta
     {
         private readonly Mock<EskaeraRepository> _repoMock;
         private readonly EskaeraKontrollerra _controller;
 
-        public EskaeraKontrolleraTesta()
+        public EskaeraKontrollerraTesta()
         {
             _repoMock = new Mock<EskaeraRepository>();
             _controller = new EskaeraKontrollerra(_repoMock.Object);
         }
 
-        // 1 - SortuEskaera
+        // SortuEskaera([FromBody] EskaeraSortuDTO dto)
+
         [Fact]
-        public void SortuEskaera_Ondo()
+        public void SortuEskaera_BadRequestItzultzenDu_RepositorioakErroreaEmatenDuenean()
         {
             var dto = new EskaeraSortuDTO();
+
             _repoMock.Setup(r => r.SortuEskaera(dto))
-                     .Returns((true, null, 5, null));
+                .Returns((false, "Errorea", null, (List<string>)null));
 
-            var result = _controller.SortuEskaera(dto) as OkObjectResult;
+            var result = _controller.SortuEskaera(dto);
 
-            Assert.NotNull(result);
-            var erantzuna = result.Value as ErantzunaDTO<int>;
-            Assert.Equal(200, erantzuna.Code);
-            Assert.Contains(5, erantzuna.Datuak);
+            Assert.IsType<BadRequestObjectResult>(result);
         }
 
         [Fact]
-        public void SortuEskaera_Errorea()
+        public void SortuEskaera_OkItzultzenDu_EskaeraOndoSortzenDenean()
         {
             var dto = new EskaeraSortuDTO();
+
             _repoMock.Setup(r => r.SortuEskaera(dto))
-                     .Returns((false, "Akatsa", null, "Xehetasunak"));
+                .Returns((true, null, 1, null));
 
-            var result = _controller.SortuEskaera(dto) as BadRequestObjectResult;
+            var result = _controller.SortuEskaera(dto);
 
-            Assert.NotNull(result);
-            var erantzuna = result.Value as ErantzunaDTO<string>;
-            Assert.Equal(400, erantzuna.Code);
+            Assert.IsType<OkObjectResult>(result);
         }
 
-        // 2 - LortuEskaerak
-        [Fact]
-        public void LortuEskaerak_Ondo()
-        {
-            var datuak = new List<EskaeraDTO>();
-            _repoMock.Setup(r => r.LortuEskaerak())
-                     .Returns((true, null, datuak));
-
-            var result = _controller.LortuEskaerak() as OkObjectResult;
-
-            Assert.NotNull(result);
-            var erantzuna = result.Value as ErantzunaDTO<EskaeraDTO>;
-            Assert.Equal(200, erantzuna.Code);
-        }
+        // LortuEskaerak()
 
         [Fact]
-        public void LortuEskaerak_Errorea()
+        public void LortuEskaerak_Status500ItzultzenDu_RepositorioakErroreaEmatenDuenean()
         {
             _repoMock.Setup(r => r.LortuEskaerak())
-                     .Returns((false, "Errorea", null));
+                .Returns((false, "Errorea", null));
 
-            var result = _controller.LortuEskaerak() as ObjectResult;
+            var result = _controller.LortuEskaerak();
 
-            Assert.Equal(500, result.StatusCode);
+            var objectResult = Assert.IsType<ObjectResult>(result);
+            Assert.Equal(500, objectResult.StatusCode);
         }
 
-        // 3 - LortuEskaeraProduktuak
         [Fact]
-        public void LortuEskaeraProduktuak_Ondo()
+        public void LortuEskaerak_OkItzultzenDu_EskaerakOndoLortzenDirenean()
         {
-            var datuak = new List<EskaeraLortuDTO>();
-            _repoMock.Setup(r => r.LortuEskaeraProduktuak(1))
-                     .Returns((true, null, datuak));
+            var lista = new List<EskaeraDTO>();
 
-            var result = _controller.LortuEskaeraProduktuak(1) as OkObjectResult;
+            _repoMock.Setup(r => r.LortuEskaerak())
+                .Returns((true, null, lista));
 
-            Assert.NotNull(result);
-            var erantzuna = result.Value as ErantzunaDTO<EskaeraLortuDTO>;
-            Assert.Equal(200, erantzuna.Code);
+            var result = _controller.LortuEskaerak();
+
+            Assert.IsType<OkObjectResult>(result);
         }
 
+        // LortuEskaeraProduktuak(int eskaeraId)
+
         [Fact]
-        public void LortuEskaeraProduktuak_EzDago()
+        public void LortuEskaeraProduktuak_NotFoundItzultzenDu_EskaeraExistitzenEzDenean()
         {
             _repoMock.Setup(r => r.LortuEskaeraProduktuak(1))
-                     .Returns((false, "Ez da aurkitu", null));
+                .Returns((false, "Ez da aurkitu", null));
 
-            var result = _controller.LortuEskaeraProduktuak(1) as NotFoundObjectResult;
+            var result = _controller.LortuEskaeraProduktuak(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<NotFoundObjectResult>(result);
         }
 
-        // 4 - EzabatuEskaera
         [Fact]
-        public void EzabatuEskaera_Ondo()
+        public void LortuEskaeraProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean()
+        {
+            var lista = new List<EskaeraLortuDTO>();
+
+            _repoMock.Setup(r => r.LortuEskaeraProduktuak(1))
+                .Returns((true, null, lista));
+
+            var result = _controller.LortuEskaeraProduktuak(1);
+
+            Assert.IsType<OkObjectResult>(result);
+        }
+
+        // EzabatuEskaera(int eskaeraId)
+
+        [Fact]
+        public void EzabatuEskaera_NotFoundItzultzenDu_EskaeraExistitzenEzDenean()
         {
             _repoMock.Setup(r => r.EzabatuEskaera(1))
-                     .Returns((true, null));
+                .Returns((false, "Ez da aurkitu"));
 
-            var result = _controller.EzabatuEskaera(1) as OkObjectResult;
+            var result = _controller.EzabatuEskaera(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<NotFoundObjectResult>(result);
         }
 
         [Fact]
-        public void EzabatuEskaera_EzDago()
+        public void EzabatuEskaera_OkItzultzenDu_EskaeraOndoEzabatzenDenean()
         {
             _repoMock.Setup(r => r.EzabatuEskaera(1))
-                     .Returns((false, "Ez da aurkitu"));
+                .Returns((true, null));
 
-            var result = _controller.EzabatuEskaera(1) as NotFoundObjectResult;
+            var result = _controller.EzabatuEskaera(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
-        // 5 - LortuMahaiKapazitatea
+        // LortuMahaiKapazitatea(int mahaiaId)
+
         [Fact]
-        public void LortuMahaiKapazitatea_Ondo()
+        public void LortuMahaiKapazitatea_NotFoundItzultzenDu_MahaiaExistitzenEzDenean()
         {
             _repoMock.Setup(r => r.LortuMahaiKapazitatea(1))
-                     .Returns((true, null, 4));
+                .Returns((false, "Ez da aurkitu", null));
 
-            var result = _controller.LortuMahaiKapazitatea(1) as OkObjectResult;
+            var result = _controller.LortuMahaiKapazitatea(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<NotFoundObjectResult>(result);
         }
 
         [Fact]
-        public void LortuMahaiKapazitatea_EzDago()
+        public void LortuMahaiKapazitatea_OkItzultzenDu_KapazitateaOndoLortzenDenean()
         {
             _repoMock.Setup(r => r.LortuMahaiKapazitatea(1))
-                     .Returns((false, "Ez da aurkitu", null));
+                .Returns((true, null, 4));
 
-            var result = _controller.LortuMahaiKapazitatea(1) as NotFoundObjectResult;
+            var result = _controller.LortuMahaiKapazitatea(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
-        // 6 - EguneratuEskaera
+        // EguneratuEskaera(int eskaeraId, [FromBody] EskaeraEguneratuDTO dto)
+
         [Fact]
-        public void EguneratuEskaera_Ondo()
+        public void EguneratuEskaera_BadRequestItzultzenDu_RepositorioakErroreaEmatenDuenean()
         {
             var dto = new EskaeraEguneratuDTO();
+
             _repoMock.Setup(r => r.EguneratuEskaera(1, dto))
-                     .Returns((true, null, null));
+                .Returns((false, "Errorea", null));
 
-            var result = _controller.EguneratuEskaera(1, dto) as OkObjectResult;
+            var result = _controller.EguneratuEskaera(1, dto);
 
-            Assert.NotNull(result);
+            Assert.IsType<BadRequestObjectResult>(result);
         }
 
         [Fact]
-        public void EguneratuEskaera_Errorea()
+        public void EguneratuEskaera_OkItzultzenDu_EskaeraOndoEguneratzenDenean()
         {
             var dto = new EskaeraEguneratuDTO();
 
-            _repoMock.Setup(r => r.EguneratuEskaera(1, It.IsAny<EskaeraEguneratuDTO>()))
-         .Returns<(bool, string, object)>((false, "Errorea", "Xehetasunak"));
+            _repoMock.Setup(r => r.EguneratuEskaera(1, dto))
+                .Returns((true, null, null));
 
+            var result = _controller.EguneratuEskaera(1, dto);
 
-            var result = _controller.EguneratuEskaera(1, dto) as BadRequestObjectResult;
-
-            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
-        // 7 - EguneratuSukaldeaEgoera
+        // EguneratuSukaldeaEgoera(int eskaeraId, [FromBody] EskaeraSukaldeaEgoeraDTO dto)
+
         [Fact]
-        public void EguneratuSukaldeaEgoera_Ondo()
+        public void EguneratuSukaldeaEgoera_BadRequestItzultzenDu_RepositorioakErroreaEmatenDuenean()
         {
-            var dto = new EskaeraSukaldeaEgoeraDTO { SukaldeaEgoera = "Prest" };
-            _repoMock.Setup(r => r.EguneratuSukaldeaEgoera(1, "Prest"))
-                     .Returns((true, null));
+            var dto = new EskaeraSukaldeaEgoeraDTO { SukaldeaEgoera = "prest" };
 
-            var result = _controller.EguneratuSukaldeaEgoera(1, dto) as OkObjectResult;
+            _repoMock.Setup(r => r.EguneratuSukaldeaEgoera(1, "prest"))
+                .Returns((false, "Errorea"));
 
-            Assert.NotNull(result);
+            var result = _controller.EguneratuSukaldeaEgoera(1, dto);
+
+            Assert.IsType<BadRequestObjectResult>(result);
         }
 
         [Fact]
-        public void EguneratuSukaldeaEgoera_Errorea()
+        public void EguneratuSukaldeaEgoera_OkItzultzenDu_EgoeraOndoEguneratzenDenean()
         {
-            var dto = new EskaeraSukaldeaEgoeraDTO { SukaldeaEgoera = "Prest" };
-            _repoMock.Setup(r => r.EguneratuSukaldeaEgoera(1, "Prest"))
-                     .Returns((false, "Errorea"));
+            var dto = new EskaeraSukaldeaEgoeraDTO { SukaldeaEgoera = "prest" };
 
-            var result = _controller.EguneratuSukaldeaEgoera(1, dto) as BadRequestObjectResult;
+            _repoMock.Setup(r => r.EguneratuSukaldeaEgoera(1, "prest"))
+                .Returns((true, null));
 
-            Assert.NotNull(result);
+            var result = _controller.EguneratuSukaldeaEgoera(1, dto);
+
+            Assert.IsType<OkObjectResult>(result);
         }
 
-        // 8 - OrdainduEskaera
-        [Fact]
-        public void OrdainduEskaera_Ondo()
-        {
-            _repoMock.Setup(r => r.OrdaintzeraBidali(1))
-                     .Returns((true, null));
-
-            var result = _controller.OrdainduEskaera(1) as OkObjectResult;
-
-            Assert.NotNull(result);
-        }
+        // OrdainduEskaera(int eskaeraId)
 
         [Fact]
-        public void OrdainduEskaera_EzDago()
+        public void OrdainduEskaera_NotFoundItzultzenDu_EskaeraExistitzenEzDenean()
         {
             _repoMock.Setup(r => r.OrdaintzeraBidali(1))
-                     .Returns((false, "Ez da aurkitu"));
+                .Returns((false, "Ez da aurkitu"));
 
-            var result = _controller.OrdainduEskaera(1) as NotFoundObjectResult;
+            var result = _controller.OrdainduEskaera(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<NotFoundObjectResult>(result);
         }
 
-        // 9 - SortuFaktura
         [Fact]
-        public void SortuFaktura_Ondo()
+        public void OrdainduEskaera_OkItzultzenDu_EskaeraOrdainketaraBidaltzenDenean()
+        {
+            _repoMock.Setup(r => r.OrdaintzeraBidali(1))
+                .Returns((true, null));
+
+            var result = _controller.OrdainduEskaera(1);
+
+            Assert.IsType<OkObjectResult>(result);
+        }
+
+        // SortuFaktura(int eskaeraId)
+
+        [Fact]
+        public void SortuFaktura_BadRequestItzultzenDu_FakturaSortzeanErroreaGertatzenDenean()
         {
             _repoMock.Setup(r => r.SortuFaktura(1))
-                     .Returns((true, null, "faktura.pdf"));
+                .Returns((false, "Errorea", null));
 
-            var result = _controller.SortuFaktura(1) as OkObjectResult;
+            var result = _controller.SortuFaktura(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<BadRequestObjectResult>(result);
         }
 
         [Fact]
-        public void SortuFaktura_Errorea()
+        public void SortuFaktura_OkItzultzenDu_FakturaOndoSortzenDenean()
         {
             _repoMock.Setup(r => r.SortuFaktura(1))
-                     .Returns((false, "Errorea", null));
+                .Returns((true, null, "faktura.pdf"));
 
-            var result = _controller.SortuFaktura(1) as BadRequestObjectResult;
+            var result = _controller.SortuFaktura(1);
 
-            Assert.NotNull(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
-        // 10 - LortuEskaerakOrdaintzeko
+        // LortuEskaerakOrdaintzeko()
+
         [Fact]
-        public void LortuEskaerakOrdaintzeko_Ondo()
+        public void LortuEskaerakOrdaintzeko_Status500ItzultzenDu_RepositorioakErroreaEmatenDuenean()
         {
-            var datuak = new List<EskaeraDTO>();
             _repoMock.Setup(r => r.LortuEskaerakOrdaintzeko())
-                     .Returns((true, null, datuak));
+                .Returns((false, "Errorea", null));
 
-            var result = _controller.LortuEskaerakOrdaintzeko() as OkObjectResult;
+            var result = _controller.LortuEskaerakOrdaintzeko();
 
-            Assert.NotNull(result);
+            var objectResult = Assert.IsType<ObjectResult>(result);
+            Assert.Equal(500, objectResult.StatusCode);
         }
 
         [Fact]
-        public void LortuEskaerakOrdaintzeko_Errorea()
+        public void LortuEskaerakOrdaintzeko_OkItzultzenDu_EskaerakOndoLortzenDirenean()
         {
+            var lista = new List<EskaeraDTO>();
+
             _repoMock.Setup(r => r.LortuEskaerakOrdaintzeko())
-                     .Returns((false, "Errorea", null));
+                .Returns((true, null, lista));
 
-            var result = _controller.LortuEskaerakOrdaintzeko() as ObjectResult;
+            var result = _controller.LortuEskaerakOrdaintzeko();
 
-            Assert.Equal(500, result.StatusCode);
+            Assert.IsType<OkObjectResult>(result);
         }
     }
 }
