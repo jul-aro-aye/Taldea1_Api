@@ -14,7 +14,9 @@ namespace ErronkaApi.Repositorioak
             _sessionFactory = sessionFactory;
         }
 
-        public (bool success, string? error, List<MahaiaDTO>? data) LortuMahaiLibre()
+        public MahaiaRepository() { }
+
+        public virtual (bool success, string? error, List<MahaiaDTO>? data) LortuMahaiLibre()
         {
             try
             {
@@ -33,7 +35,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, MahaiaDTO? data) LortuMahaiBat(int id)
+        public virtual (bool success, string? error, MahaiaDTO? data) LortuMahaiBat(int id)
         {
             try
             {

@@ -13,7 +13,9 @@ namespace ErronkaApi.Repositorioak
             _sessionFactory = sessionFactory;
         }
 
-        public (bool success, string? error, Erabiltzailea? user) Login(string erabiltzailea, string pasahitza)
+        public ErabiltzaileaRepository() { }
+
+        public virtual (bool success, string? error, Erabiltzailea? user) Login(string erabiltzailea, string pasahitza)
         {
             try
             {
