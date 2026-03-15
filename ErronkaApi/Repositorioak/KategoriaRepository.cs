@@ -14,7 +14,12 @@ namespace ErronkaApi.Repositorioak
             _sessionFactory = sessionFactory;
         }
 
-        public (bool success, string? error, List<KategoriaDTO>? data) LortuKategoriak()
+        public KategoriaRepository()
+        {
+            
+        }
+
+        public virtual (bool success, string? error, List<KategoriaDTO>? data) LortuKategoriak()
         {
             try
             {
@@ -32,7 +37,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, KategoriaDTO? data) LortuKategoria(int id)
+        public virtual (bool success, string? error, KategoriaDTO? data) LortuKategoria(int id)
         {
             try
             {
@@ -50,7 +55,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error) GehituKategoria(KategoriaDTO dto)
+        public virtual (bool success, string? error) GehituKategoria(KategoriaDTO dto)
         {
             using var session = _sessionFactory.OpenSession();
             using var tx = session.BeginTransaction();
@@ -74,7 +79,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error) EguneratuKategoria(int id, KategoriaDTO dto)
+        public virtual (bool success, string? error) EguneratuKategoria(int id, KategoriaDTO dto)
         {
             using var session = _sessionFactory.OpenSession();
             using var tx = session.BeginTransaction();
@@ -99,7 +104,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error) EzabatuKategoria(int id)
+        public virtual (bool success, string? error) EzabatuKategoria(int id)
         {
             using var session = _sessionFactory.OpenSession();
             using var tx = session.BeginTransaction();
@@ -122,7 +127,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        private KategoriaDTO MapToDTO(Kategoria k)
+        public virtual KategoriaDTO MapToDTO(Kategoria k)
         {
             return new KategoriaDTO
             {

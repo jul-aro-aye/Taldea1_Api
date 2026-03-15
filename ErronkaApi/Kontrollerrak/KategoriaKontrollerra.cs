@@ -15,6 +15,7 @@ namespace ErronkaApi.Kontrollerrak
             _repo = repo;
         }
 
+
         [HttpGet]
         public IActionResult LortuKategoriak()
         {

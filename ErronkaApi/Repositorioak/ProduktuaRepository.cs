@@ -14,7 +14,12 @@ namespace ErronkaApi.Repositorioak
             _sessionFactory = sessionFactory;
         }
 
-        public (bool success, string? error, List<ProduktuaDTO>? data) LortuProduktuak()
+        public ProduktuaRepository()
+        {
+            
+        }
+
+        public virtual (bool success, string? error, List<ProduktuaDTO>? data) LortuProduktuak()
         {
             try
             {
@@ -32,7 +37,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, ProduktuaDTO? data) LortuProduktua(int id)
+        public virtual (bool success, string? error, ProduktuaDTO? data) LortuProduktua(int id)
         {
             try
             {
@@ -50,7 +55,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error) GehituProduktua(ProduktuaDTO dto)
+        public virtual (bool success, string? error) GehituProduktua(ProduktuaDTO dto)
         {
             using var session = _sessionFactory.OpenSession();
             using var tx = session.BeginTransaction();
@@ -81,7 +86,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error) EguneratuProduktua(int id, ProduktuaDTO dto)
+        public virtual (bool success, string? error) EguneratuProduktua(int id, ProduktuaDTO dto)
         {
             using var session = _sessionFactory.OpenSession();
             using var tx = session.BeginTransaction();
@@ -113,7 +118,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error) EzabatuProduktua(int id)
+        public virtual (bool success, string? error) EzabatuProduktua(int id)
         {
             using var session = _sessionFactory.OpenSession();
             using var tx = session.BeginTransaction();
@@ -136,7 +141,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        private ProduktuaDTO MapToDTO(Produktua p)
+        public virtual ProduktuaDTO MapToDTO(Produktua p)
         {
             return new ProduktuaDTO
             {
