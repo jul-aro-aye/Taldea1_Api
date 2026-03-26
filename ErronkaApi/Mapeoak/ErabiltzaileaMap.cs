@@ -29,7 +29,7 @@ namespace ErronkaApi.Mapeoak
             Map(x => x.pasahitza).Column("pasahitza").Length(45);
             References(x => x.rola).Column("rola_id").Not.Nullable().Not.LazyLoad();
             Map(x => x.ezabatua).Column("ezabatua");
-            Map(x => x.txat).Column("chat").Not.Nullable();
+            Map(x => x.txat).Column("txat").Not.Nullable();
         }
     }
 }

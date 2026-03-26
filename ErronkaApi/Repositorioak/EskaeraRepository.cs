@@ -69,6 +69,12 @@ namespace ErronkaApi.Repositorioak
                 foreach (var p in dto.Produktuak)
                 {
                     var produktua = GetProduktua(session, p.ProduktuaId);
+                    if (produktua == null)
+                    {
+                        faltan.Add($"Produktua {p.ProduktuaId}");
+                        continue;
+                    }
+
                     if (produktua.stock_aktuala < p.Kantitatea)
                         faltan.Add(produktua.izena);
                 }
@@ -91,6 +97,9 @@ namespace ErronkaApi.Repositorioak
                 foreach (var p in dto.Produktuak)
                 {
                     var produktua = GetProduktua(session, p.ProduktuaId);
+                    if (produktua == null)
+                        continue;
+
                     produktua.stock_aktuala -= p.Kantitatea;
                     session.Update(produktua);
 

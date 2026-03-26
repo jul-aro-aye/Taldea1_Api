@@ -15,6 +15,22 @@ namespace ErronkaApi.Kontrollerrak
             _repo = repo;
         }
 
+        [HttpGet]
+        public IActionResult LortuMahaiak()
+        {
+            var (success, error, data) = _repo.LortuMahaiak();
+
+            if (!success)
+                return StatusCode(500, new ErantzunaDTO<string> { Code = 500, Message = error });
+
+            return Ok(new ErantzunaDTO<MahaiaDTO>
+            {
+                Code = 200,
+                Message = "Mahaiak lortu dira",
+                Datuak = data
+            });
+        }
+
         [HttpGet("libre")]
         public IActionResult LortuMahaiLibre()
         {
