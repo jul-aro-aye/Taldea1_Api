@@ -17,6 +17,7 @@ namespace ErronkaApi.Mapeoak
             Map(x => x.sukaldeaEgoera).Column("sukaldea_egoera");
             Map(x => x.sortzeData).Column("sortze_data");
             Map(x => x.itxieraData).Column("itxiera_data");
+            Map(x => x.erreserbaId).Column("erreserba_id").Nullable();
 
             HasMany(x => x.EskaeraMahaiak)
                 .KeyColumn("eskaera_id")

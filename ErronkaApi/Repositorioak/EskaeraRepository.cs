@@ -31,7 +31,7 @@ namespace ErronkaApi.Repositorioak
             {
                 Id = e.id,
                 Izena = $"Eskaera #{e.id}",
-                MahaiaId = e.mahaia_id,
+                MahaiaId = e.mahaia_id ?? 0,
                 Komensalak = e.komensalak,
                 Data = e.sortzeData.ToString("yyyy-MM-dd HH:mm"),
                 SukaldeaEgoera = e.sukaldeaEgoera
@@ -87,12 +87,18 @@ namespace ErronkaApi.Repositorioak
                     erabiltzaileId = dto.ErabiltzaileId,
                     komensalak = dto.Komensalak,
                     egoera = "irekita",
-                    sukaldeaEgoera = "zain",
+                    sukaldeaEgoera = "bidalita",
                     sortzeData = DateTime.Now,
                     mahaia_id = dto.MahaiaId
                 };
 
                 session.Save(eskaera);
+
+                session.Save(new EskaeraMahaiak
+                {
+                    Eskaera = eskaera,
+                    Mahaia = mahaia
+                });
 
                 foreach (var p in dto.Produktuak)
                 {
@@ -189,6 +195,16 @@ namespace ErronkaApi.Repositorioak
                     produktua.stock_aktuala += ep.Kantitatea;
                     session.Update(produktua);
                     session.Delete(ep);
+                }
+
+                if (eskaera.mahaia_id.HasValue)
+                {
+                    var mahaia = GetMahaia(session, eskaera.mahaia_id.Value);
+                    if (mahaia != null)
+                    {
+                        mahaia.egoera = "libre";
+                        session.Update(mahaia);
+                    }
                 }
 
                 session.Delete(eskaera);
@@ -311,10 +327,7 @@ namespace ErronkaApi.Repositorioak
                 var produktuak = session.Query<EskaeraProduktuak>()
                     .Where(p => p.Eskaera.id == eskaeraId)
                     .ToList();
-
-                var mahaiak = session.Query<Mahaia>()
-                    .Where(m => m.EskaeraMahaiak.Any(em => em.Eskaera.id == eskaeraId))
-                    .ToList();
+                decimal total = 0;
 
                 string escritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                 string carpetaFakturak = Path.Combine(escritorio, "fakturak");
@@ -342,8 +355,6 @@ namespace ErronkaApi.Repositorioak
                     doc.Add(new iTextSharp.text.Paragraph($"Faktura #: {eskaeraId}", normalFont) { Alignment = iTextSharp.text.Element.ALIGN_CENTER, SpacingAfter = 5f });
                     doc.Add(new iTextSharp.text.Paragraph($"Mahaia: {eskaera.mahaia_id}   Data: {eskaera.sortzeData:dd/MM/yyyy HH:mm}", normalFont) { SpacingAfter = 5f });
 
-                    decimal total = 0;
-
                     foreach (var p in produktuak)
                     {
                         string produktuIzena = p.Produktua?.izena ?? "Ezezaguna";
@@ -367,14 +378,35 @@ namespace ErronkaApi.Repositorioak
                     doc.Close();
                 }
 
+                var faktura = session.Query<Faktura>()
+                    .FirstOrDefault(f => f.eskaeraId == eskaeraId);
+
+                if (faktura == null)
+                {
+                    faktura = new Faktura
+                    {
+                        eskaeraId = eskaeraId
+                    };
+                }
+
+                faktura.pdfIzena = filename;
+                faktura.data = DateTime.Now;
+                faktura.guztira = total;
+
+                session.SaveOrUpdate(faktura);
+
                 eskaera.egoera = "itxita";
                 eskaera.itxieraData = DateTime.Now;
                 session.Update(eskaera);
 
-                foreach (var m in mahaiak)
+                if (eskaera.mahaia_id.HasValue)
                 {
-                    m.egoera = "libre";
-                    session.Update(m);
+                    var mahaia = GetMahaia(session, eskaera.mahaia_id.Value);
+                    if (mahaia != null)
+                    {
+                        mahaia.egoera = "libre";
+                        session.Update(mahaia);
+                    }
                 }
 
                 tx.Commit();
