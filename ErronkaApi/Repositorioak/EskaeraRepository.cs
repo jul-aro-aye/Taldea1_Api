@@ -61,6 +61,17 @@ namespace ErronkaApi.Repositorioak
                 if (mahaia == null)
                     return (false, "Mahaia ez da aurkitu", null, null);
 
+                if (dto.ErreserbaId.HasValue)
+                {
+                    var erreserba = session.Get<Erreserba>(dto.ErreserbaId.Value);
+
+                    if (erreserba == null)
+                        return (false, "Erreserba ez da aurkitu", null, null);
+
+                    if (erreserba.mahaiaId != dto.MahaiaId)
+                        return (false, "Erreserba ez dator bat aukeratutako mahaiarekin", null, null);
+                }
+
                 mahaia.egoera = "okupatuta";
                 session.Update(mahaia);
 
@@ -89,7 +100,8 @@ namespace ErronkaApi.Repositorioak
                     egoera = "irekita",
                     sukaldeaEgoera = "bidalita",
                     sortzeData = DateTime.Now,
-                    mahaia_id = dto.MahaiaId
+                    mahaia_id = dto.MahaiaId,
+                    erreserbaId = dto.ErreserbaId
                 };
 
                 session.Save(eskaera);
