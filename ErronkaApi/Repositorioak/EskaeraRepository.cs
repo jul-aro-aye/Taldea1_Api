@@ -119,6 +119,20 @@ namespace ErronkaApi.Repositorioak
                     });
                 }
 
+                var guztira = dto.Produktuak.Sum(p =>
+                {
+                    var produktua = GetProduktua(session, p.ProduktuaId);
+                    return produktua == null ? 0 : produktua.prezioa * p.Kantitatea;
+                });
+
+                session.Save(new Faktura
+                {
+                    eskaeraId = eskaera.id,
+                    pdfIzena = string.Empty,
+                    data = DateTime.Now,
+                    guztira = guztira
+                });
+
                 tx.Commit();
                 return (true, null, eskaera.id, null);
             }
@@ -196,6 +210,13 @@ namespace ErronkaApi.Repositorioak
                     session.Update(produktua);
                     session.Delete(ep);
                 }
+
+                var fakturak = session.Query<Faktura>()
+                    .Where(f => f.eskaeraId == eskaeraId)
+                    .ToList();
+
+                foreach (var faktura in fakturak)
+                    session.Delete(faktura);
 
                 if (eskaera.mahaia_id.HasValue)
                 {
