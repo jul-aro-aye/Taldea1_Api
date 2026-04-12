@@ -35,6 +35,7 @@ namespace ErronkaApi.NHibernate
                     m.FluentMappings.AddFromAssemblyOf<ErabiltzaileaMap>();
                     m.FluentMappings.AddFromAssemblyOf<ProduktuaMap>();
                     m.FluentMappings.AddFromAssemblyOf<EskaeraMap>();
+                    m.FluentMappings.AddFromAssemblyOf<ErreserbaMap>();
                     m.FluentMappings.AddFromAssemblyOf<MahaiaMap>();
                     m.FluentMappings.AddFromAssemblyOf<EskaeraMahaiakMap>();
                     m.FluentMappings.AddFromAssemblyOf<RolaMap>();
