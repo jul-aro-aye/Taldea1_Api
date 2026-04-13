@@ -61,6 +61,29 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        [HttpGet("mahaia/{mahaiaId}/aktiboa")]
+        public IActionResult LortuEskaeraAktiboaMahaika(int mahaiaId)
+        {
+            var (success, error, data) = _repo.LortuEskaeraAktiboaMahaika(mahaiaId);
+
+            if (!success)
+            {
+                return NotFound(new ErantzunaDTO<string>
+                {
+                    Code = 404,
+                    Message = error,
+                    Datuak = null
+                });
+            }
+
+            return Ok(new ErantzunaDTO<EskaeraDTO>
+            {
+                Code = 200,
+                Message = "Eskaera lortu da",
+                Datuak = new List<EskaeraDTO> { data! }
+            });
+        }
+
         [HttpGet("{eskaeraId}/produktuak")]
         public IActionResult LortuEskaeraProduktuak(int eskaeraId)
         {
