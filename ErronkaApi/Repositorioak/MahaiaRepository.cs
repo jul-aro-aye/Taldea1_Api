@@ -14,7 +14,12 @@ namespace ErronkaApi.Repositorioak
             _sessionFactory = sessionFactory;
         }
 
-        public (bool success, string? error, List<MahaiaDTO>? data) LortuMahaiak(DateTime? data = null, string? txanda = null)
+        public MahaiaRepository()
+        {
+
+        }
+
+        public virtual (bool success, string? error, List<MahaiaDTO>? data) LortuMahaiak(DateTime? data = null, string? txanda = null)
         {
             try
             {
@@ -27,20 +32,15 @@ namespace ErronkaApi.Repositorioak
                     .Select(m => MapToDTO(m, mahaiOkupatuak))
                     .ToList();
 
-        var lista = session.Query<Mahaia>()
-            .OrderBy(m => m.zenbakia)
-            .Select(MapToDTO)
-            .ToList();
+                return (true, null, lista);
+            }
+            catch (Exception ex)
+            {
+                return (false, ex.Message, null);
+            }
+        }
 
-        return (true, null, lista);
-    }
-    catch (Exception ex)
-    {
-        return (false, ex.Message, null);
-    }
-}
-
-        public (bool success, string? error, List<MahaiaDTO>? data) LortuMahaiLibre(DateTime? data = null, string? txanda = null)
+        public virtual (bool success, string? error, List<MahaiaDTO>? data) LortuMahaiLibre(DateTime? data = null, string? txanda = null)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, MahaiaDTO? data) LortuMahaiBat(int id, DateTime? data = null, string? txanda = null)
+        public virtual (bool success, string? error, MahaiaDTO? data) LortuMahaiBat(int id, DateTime? data = null, string? txanda = null)
         {
             try
             {

@@ -458,7 +458,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, EskaeraDTO? data)
+        public virtual (bool success, string? error, EskaeraDTO? data)
             LortuEskaeraAktiboaMahaika(int mahaiaId, DateTime? data = null, string? txanda = null)
         {
             try
@@ -477,7 +477,7 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public (bool success, string? error, List<EskaeraLortuDTO>? data)
+        public virtual (bool success, string? error, List<EskaeraLortuDTO>? data)
             LortuEskaeraProduktuak(int eskaeraId)
         {
             try

@@ -15,7 +15,7 @@ namespace ErronkaApi.Testak
         {
             // Arrange
             var mockRepo = new Mock<MahaiaRepository>();
-            mockRepo.Setup(r => r.LortuMahaiLibre())
+            mockRepo.Setup(r => r.LortuMahaiLibre(null, null))
                     .Returns((false, "Errorea gertatu da", null as List<MahaiaDTO>));
 
             var controller = new MahaiakController(mockRepo.Object);
@@ -38,7 +38,7 @@ namespace ErronkaApi.Testak
         {
             // Arrange
             var mockRepo = new Mock<MahaiaRepository>();
-            mockRepo.Setup(r => r.LortuMahaiLibre())
+            mockRepo.Setup(r => r.LortuMahaiLibre(null, null))
                     .Returns((true, null, new List<MahaiaDTO>()));
 
             var controller = new MahaiakController(mockRepo.Object);
@@ -69,7 +69,7 @@ namespace ErronkaApi.Testak
             };
 
             var mockRepo = new Mock<MahaiaRepository>();
-            mockRepo.Setup(r => r.LortuMahaiLibre())
+            mockRepo.Setup(r => r.LortuMahaiLibre(null, null))
                     .Returns((true, null, data));
 
             var controller = new MahaiakController(mockRepo.Object);
@@ -100,7 +100,7 @@ namespace ErronkaApi.Testak
         {
             // Arrange
             var mockRepo = new Mock<MahaiaRepository>();
-            mockRepo.Setup(r => r.LortuMahaiBat(5))
+            mockRepo.Setup(r => r.LortuMahaiBat(5, null, null))
                     .Returns((false, "Mahaia ez da existitzen", null as MahaiaDTO));
 
             var controller = new MahaiakController(mockRepo.Object);
@@ -128,7 +128,7 @@ namespace ErronkaApi.Testak
             };
 
             var mockRepo = new Mock<MahaiaRepository>();
-            mockRepo.Setup(r => r.LortuMahaiBat(1))
+            mockRepo.Setup(r => r.LortuMahaiBat(1, null, null))
                     .Returns((true, null, mahaia));
 
             var controller = new MahaiakController(mockRepo.Object);
