@@ -22,6 +22,9 @@ namespace ErronkaApi.Mapeoak
             Map(x => x.Kantitatea)
                 .Column("kantitatea");
 
+            Map(x => x.Egoera)
+                .Column("egoera");
+
             Map(x => x.PrezioUnitarioa)
                 .Column("prezio_unitarioa");
         }

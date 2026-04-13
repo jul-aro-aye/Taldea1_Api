@@ -54,6 +54,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors(); 
 
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
 app.UseMiddleware<NHibernateSessionMiddleware>();
