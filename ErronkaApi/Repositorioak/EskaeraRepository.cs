@@ -61,6 +61,9 @@ namespace ErronkaApi.Repositorioak
                 if (mahaia == null)
                     return (false, "Mahaia ez da aurkitu", null, null);
 
+                if (!string.Equals(mahaia.egoera, "libre", StringComparison.OrdinalIgnoreCase))
+                    return (false, "Mahaia ez dago libre", null, null);
+
                 if (dto.ErreserbaId.HasValue)
                 {
                     var erreserba = session.Get<Erreserba>(dto.ErreserbaId.Value);
