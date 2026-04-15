@@ -558,8 +558,8 @@ namespace ErronkaApi.Repositorioak
                 if (mahaia == null)
                     return (false, "Mahaia ez da aurkitu", null);
 
-                return (true, null, mahaia.kapazitatea);
-            }
+                    return (true, null, mahaia.kapazitatea);
+                }
             catch (Exception ex)
             {
                 return (false, ex.Message, null);
@@ -751,6 +751,16 @@ namespace ErronkaApi.Repositorioak
                 eskaera.egoera = "itxita";
                 eskaera.itxieraData = DateTime.Now;
                 session.Update(eskaera);
+
+                if (eskaera.erreserbaId.HasValue)
+                {
+                    var erreserba = session.Get<Erreserba>(eskaera.erreserbaId.Value);
+                    if (erreserba != null)
+                    {
+                        erreserba.egoera = "amaituta";
+                        session.Update(erreserba);
+                    }
+                }
 
                 if (eskaera.mahaia_id.HasValue)
                 {
