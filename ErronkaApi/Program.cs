@@ -1,7 +1,8 @@
-using ErronkaApi;
-using ErronkaApi.Repositorioak;
+﻿using ErronkaApi;
+using ErronkaApi.Logak;
+using ErronkaApi.Middlewareak;
 using ErronkaApi.NHibernate;
-
+using ErronkaApi.Repositorioak;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton(NHibernateHelper.SessionFactory);
+builder.Services.AddSingleton<Log>();
 builder.Services.AddTransient<ErabiltzaileaRepository>();
 builder.Services.AddTransient<KategoriaRepository>();
 builder.Services.AddTransient<ProduktuaRepository>();
@@ -41,7 +43,6 @@ builder.Services.AddTransient<EskaeraRepository>();
 builder.Services.AddTransient<MahaiaRepository>();
 builder.Services.AddTransient<ErreserbaRepository>();
 builder.Services.AddTransient<FakturaRepository>();
-
 
 var app = builder.Build();
 
@@ -54,8 +55,9 @@ if (app.Environment.IsDevelopment())
 
 //app.UseHttpsRedirection();
 
-app.UseCors(); 
+app.UseCors();
 
+app.UseMiddleware<TpvEkintzaLogMiddleware>();
 app.UseStaticFiles();
 
 app.UseAuthorization();
