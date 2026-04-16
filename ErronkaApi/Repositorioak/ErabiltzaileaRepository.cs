@@ -38,25 +38,22 @@ namespace ErronkaApi.Repositorioak
             }
         }
 
-        public virtual (bool success, bool exists, string? error, bool txat) LortuTxatBaimena(int erabiltzaileId)
+        public virtual (bool success, string? error, List<Erabiltzailea>? users) LortuAktiboak()
         {
             try
             {
                 using var session = _sessionFactory.OpenSession();
 
-                var user = session.Query<Erabiltzailea>()
-                    .FirstOrDefault(e =>
-                        e.id == erabiltzaileId &&
-                        !e.ezabatua);
+                var users = session.Query<Erabiltzailea>()
+                    .Where(e => !e.ezabatua)
+                    .OrderBy(e => e.erabiltzailea)
+                    .ToList();
 
-                if (user == null)
-                    return (true, false, null, false);
-
-                return (true, true, null, user.txat);
+                return (true, null, users);
             }
             catch (Exception ex)
             {
-                return (false, false, ex.Message, false);
+                return (false, ex.Message, null);
             }
         }
     }

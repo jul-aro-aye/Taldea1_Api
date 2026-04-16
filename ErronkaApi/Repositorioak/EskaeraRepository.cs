@@ -4,6 +4,7 @@ using NHibernate.Linq;
 using NHSession = NHibernate.ISession;
 using NHFactory = NHibernate.ISessionFactory;
 using NHibernate;
+using System.Runtime.InteropServices;
 
 namespace ErronkaApi.Repositorioak
 {
@@ -557,8 +558,8 @@ namespace ErronkaApi.Repositorioak
                 if (mahaia == null)
                     return (false, "Mahaia ez da aurkitu", null);
 
-                return (true, null, mahaia.kapazitatea);
-            }
+                    return (true, null, mahaia.kapazitatea);
+                }
             catch (Exception ex)
             {
                 return (false, ex.Message, null);
@@ -751,6 +752,16 @@ namespace ErronkaApi.Repositorioak
                 eskaera.itxieraData = DateTime.Now;
                 session.Update(eskaera);
 
+                if (eskaera.erreserbaId.HasValue)
+                {
+                    var erreserba = session.Get<Erreserba>(eskaera.erreserbaId.Value);
+                    if (erreserba != null)
+                    {
+                        erreserba.egoera = "amaituta";
+                        session.Update(erreserba);
+                    }
+                }
+
                 if (eskaera.mahaia_id.HasValue)
                 {
                     var mahaia = GetMahaia(session, eskaera.mahaia_id.Value);
@@ -758,7 +769,13 @@ namespace ErronkaApi.Repositorioak
                     {
                         mahaia.egoera = "libre";
                         session.Update(mahaia);
+
+                        
                     }
+
+                    
+
+
                 }
 
                 tx.Commit();
