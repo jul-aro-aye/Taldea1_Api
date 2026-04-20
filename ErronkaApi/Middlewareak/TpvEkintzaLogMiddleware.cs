@@ -14,13 +14,15 @@ namespace ErronkaApi.Middlewareak
     public class TpvEkintzaLogMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly Log _log;
+        // private readonly Log _log;
+        private readonly LogAnder _logAnder;
         private readonly ISessionFactory _sessionFactory;
 
-        public TpvEkintzaLogMiddleware(RequestDelegate next, Log log, ISessionFactory sessionFactory)
+        public TpvEkintzaLogMiddleware(RequestDelegate next, LogAnder logAnder, ISessionFactory sessionFactory)
         {
             _next = next;
-            _log = log;
+            // _log = log;
+            _logAnder = logAnder;
             _sessionFactory = sessionFactory;
         }
 
@@ -39,12 +41,14 @@ namespace ErronkaApi.Middlewareak
             {
                 await _next(context);
                 string mezua = SortuLogMezua(context, body, context.Response.StatusCode);
-                _log.GordeLog(erabiltzailea, mezua);
+                // _log.GordeLog(erabiltzailea, mezua);
+                _logAnder.RegistrarLog($"{erabiltzailea}: {mezua}");
             }
             catch (Exception ex)
             {
                 string errorea = SortuErroreMezua(context, body, ex);
-                _log.GordeLog(erabiltzailea, errorea);
+                // _log.GordeLog(erabiltzailea, errorea);
+                _logAnder.RegistrarLog($"{erabiltzailea}: {errorea}");
                 throw;
             }
         }

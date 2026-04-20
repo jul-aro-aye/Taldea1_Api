@@ -35,7 +35,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton(NHibernateHelper.SessionFactory);
-builder.Services.AddSingleton<Log>();
+// builder.Services.AddSingleton<Log>();
+builder.Services.AddSingleton<LogAnder>();
 builder.Services.AddTransient<ErabiltzaileaRepository>();
 builder.Services.AddTransient<KategoriaRepository>();
 builder.Services.AddTransient<ProduktuaRepository>();
