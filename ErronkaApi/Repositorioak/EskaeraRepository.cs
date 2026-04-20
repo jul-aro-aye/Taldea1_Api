@@ -52,6 +52,12 @@ namespace ErronkaApi.Repositorioak
             return data.Hour >= 18 ? "afaria" : "bazkaria";
         }
 
+        private static bool EskaeraBlokeatutaDago(Eskaera eskaera)
+        {
+            return string.Equals(eskaera.egoera, "ordainketa_pendiente", StringComparison.OrdinalIgnoreCase) ||
+                   string.Equals(eskaera.egoera, "itxita", StringComparison.OrdinalIgnoreCase);
+        }
+
         private string LortuEskaerarenTxanda(NHSession session, Eskaera eskaera)
         {
             if (eskaera.erreserbaId.HasValue)
@@ -389,6 +395,10 @@ namespace ErronkaApi.Repositorioak
                 session.Update(mahaia);
 
                 var eskaeraBerria = eskaeraAktiboa == null;
+
+                if (!eskaeraBerria && EskaeraBlokeatutaDago(eskaeraAktiboa!))
+                    return (false, "Eskaera ordainketa pendiente edo itxita dago; ezin da gehiago aldatu", null, null);
+
                 var eskaera = eskaeraAktiboa ?? new Eskaera
                 {
                     erabiltzaileId = dto.ErabiltzaileId,
@@ -517,6 +527,9 @@ namespace ErronkaApi.Repositorioak
                 if (eskaera == null)
                     return (false, "Eskaera ez da aurkitu");
 
+                if (EskaeraBlokeatutaDago(eskaera))
+                    return (false, "Eskaera ordainketa pendiente edo itxita dago; ezin da ezabatu");
+
                 LeheneratuEskaeraProduktuak(session, eskaera, true);
 
                 var fakturak = session.Query<Faktura>()
@@ -577,6 +590,9 @@ namespace ErronkaApi.Repositorioak
                 var eskaera = GetEskaera(session, eskaeraId);
                 if (eskaera == null)
                     return (false, "Eskaera ez da aurkitu", null);
+
+                if (EskaeraBlokeatutaDago(eskaera))
+                    return (false, "Eskaera ordainketa pendiente edo itxita dago; ezin da gehiago aldatu", null);
 
                 var produktuEskariak = dto.Produktuak?
                     .Select(p => new ProduktuEskaria
