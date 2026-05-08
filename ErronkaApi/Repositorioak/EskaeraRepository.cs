@@ -4,6 +4,9 @@ using NHibernate.Linq;
 using NHSession = NHibernate.ISession;
 using NHFactory = NHibernate.ISessionFactory;
 using NHibernate;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Text;
 
 namespace ErronkaApi.Repositorioak
 {
@@ -46,6 +49,15 @@ namespace ErronkaApi.Repositorioak
                 : "Bazkaria";
         }
 
+        private static DateTime SortuEskaerarenData(DateTime? data, string? txanda)
+        {
+            if (!data.HasValue)
+                return DateTime.Now;
+
+            var ordua = NormalizeTxanda(txanda) == "afaria" ? 20 : 13;
+            return data.Value.Date.AddHours(ordua);
+        }
+
         private static string InferituTxanda(DateTime data)
         {
             return data.Hour >= 18 ? "afaria" : "bazkaria";
@@ -59,6 +71,11 @@ namespace ErronkaApi.Repositorioak
 
         private string LortuEskaerarenTxanda(NHSession session, Eskaera eskaera)
         {
+            ZiurtatuEskaerenTxandaZutabea(session);
+
+            if (!string.IsNullOrWhiteSpace(eskaera.txanda))
+                return NormalizeTxanda(eskaera.txanda);
+
             if (eskaera.erreserbaId.HasValue)
             {
                 var erreserba = session.Get<Erreserba>(eskaera.erreserbaId.Value);
@@ -98,6 +115,8 @@ namespace ErronkaApi.Repositorioak
             DateTime? data = null,
             string? txanda = null)
         {
+            ZiurtatuEskaerenTxandaZutabea(session);
+
             var eskaerak = session.Query<Eskaera>()
                 .Where(e =>
                     e.mahaia_id == mahaiaId &&
@@ -159,6 +178,93 @@ namespace ErronkaApi.Repositorioak
         {
             var kodea = deskontuKodea?.Trim();
             return string.IsNullOrWhiteSpace(kodea) ? null : kodea;
+        }
+
+        private static bool BadagoGutxienezProduktuBat(IEnumerable<ProduktuEskaria>? produktuEskariak)
+        {
+            return produktuEskariak != null && produktuEskariak.Any(p => p.ProduktuaId > 0 && p.Kantitatea > 0);
+        }
+
+        private static bool SukaldeaEgindaDago(string? egoera)
+        {
+            return string.Equals(egoera, "eginda", StringComparison.OrdinalIgnoreCase);
+        }
+
+        private static string LortuOdooApiBaseUrl()
+        {
+            var inguruneBalioa = Environment.GetEnvironmentVariable("ODOO_API_BASE_URL");
+            if (!string.IsNullOrWhiteSpace(inguruneBalioa))
+                return inguruneBalioa.Trim().TrimEnd('/') + "/";
+
+            try
+            {
+                var appSettingsPath = Path.Combine(AppContext.BaseDirectory, "appsettings.json");
+                if (File.Exists(appSettingsPath))
+                {
+                    var json = JObject.Parse(File.ReadAllText(appSettingsPath));
+                    var balioa = json["OdooApiBaseUrl"]?.ToString();
+                    if (!string.IsNullOrWhiteSpace(balioa))
+                        return balioa.Trim().TrimEnd('/') + "/";
+                }
+            }
+            catch
+            {
+            }
+
+            return "http://localhost:5015/";
+        }
+
+        private void ZiurtatuEskaerenTxandaZutabea(NHSession session)
+        {
+            session.CreateSQLQuery(@"
+                ALTER TABLE eskaerak
+                ADD COLUMN IF NOT EXISTS txanda VARCHAR(20) NULL AFTER sortze_data")
+                .ExecuteUpdate();
+
+            session.CreateSQLQuery(@"
+                UPDATE eskaerak e
+                LEFT JOIN erreserbak r ON r.id = e.erreserba_id
+                SET e.txanda = CASE
+                    WHEN r.txanda IS NOT NULL AND TRIM(r.txanda) <> '' THEN
+                        CASE
+                            WHEN LOWER(TRIM(r.txanda)) = 'afaria' THEN 'afaria'
+                            ELSE 'bazkaria'
+                        END
+                    WHEN HOUR(e.sortze_data) >= 18 THEN 'afaria'
+                    ELSE 'bazkaria'
+                END
+                WHERE e.txanda IS NULL OR TRIM(e.txanda) = ''")
+                .ExecuteUpdate();
+        }
+
+        private (bool success, string? error, decimal portzentaia) BalioztatuDeskontuKodea(string kodea)
+        {
+            try
+            {
+                using var client = new HttpClient
+                {
+                    BaseAddress = new Uri(LortuOdooApiBaseUrl())
+                };
+
+                var body = JsonConvert.SerializeObject(new { kodea });
+                using var content = new StringContent(body, Encoding.UTF8, "application/json");
+                var response = client.PostAsync("api/deskontuak/egiaztatu", content).Result;
+
+                if (!response.IsSuccessStatusCode)
+                    return (false, "Ezin izan da deskontu kodea egiaztatu", 0);
+
+                var json = response.Content.ReadAsStringAsync().Result;
+                var emaitza = JsonConvert.DeserializeObject<OdooDeskontuEmaitzaBarne>(json);
+
+                if (emaitza == null || !emaitza.ExistitzenDa || emaitza.Balioa <= 0)
+                    return (false, "Kodea ez da zuzena edo ez dago aktibo.", 0);
+
+                return (true, null, NormalizatuDeskontuPortzentaia(Convert.ToDecimal(emaitza.Balioa)));
+            }
+            catch
+            {
+                return (false, "Ezin izan da deskontu kodea egiaztatu", 0);
+            }
         }
 
         private void ZiurtatuDeskontuenTaula(NHSession session)
@@ -461,6 +567,7 @@ namespace ErronkaApi.Repositorioak
                 Izena = $"Eskaera #{e.id}",
                 MahaiaId = e.mahaia_id ?? 0,
                 Komensalak = e.komensalak,
+                Egoera = e.egoera,
                 Data = e.sortzeData.ToString("yyyy-MM-dd HH:mm"),
                 Txanda = FormatTxanda(LortuEskaerarenTxanda(session, e)),
                 SukaldeaEgoera = e.sukaldeaEgoera,
@@ -488,9 +595,28 @@ namespace ErronkaApi.Repositorioak
 
             try
             {
+                ZiurtatuEskaerenTxandaZutabea(session);
+
                 var mahaia = GetMahaia(session, dto.MahaiaId);
                 if (mahaia == null)
                     return (false, "Mahaia ez da aurkitu", null, null);
+
+                if (dto.Komensalak <= 0)
+                    return (false, "Komensalak 1 edo handiagoa izan behar dira", null, null);
+
+                if (mahaia.kapazitatea > 0 && dto.Komensalak > mahaia.kapazitatea)
+                    return (false, "Komensalak mahaiko kapazitatea baino handiagoak dira", null, null);
+
+                var produktuEskariGordinak = dto.Produktuak?
+                    .Select(p => new ProduktuEskaria
+                    {
+                        ProduktuaId = p.ProduktuaId,
+                        Kantitatea = p.Kantitatea
+                    })
+                    .ToList() ?? new List<ProduktuEskaria>();
+
+                if (!BadagoGutxienezProduktuBat(produktuEskariGordinak))
+                    return (false, "Eskaerak gutxienez produktu bat behar du", null, null);
 
                 if (dto.ErreserbaId.HasValue)
                 {
@@ -511,11 +637,7 @@ namespace ErronkaApi.Repositorioak
 
                 var (faltan, produktuEskariak, osagaiEskariak) = BalidatuEskariaStockarekin(
                     session,
-                    dto.Produktuak.Select(p => new ProduktuEskaria
-                    {
-                        ProduktuaId = p.ProduktuaId,
-                        Kantitatea = p.Kantitatea
-                    }));
+                    produktuEskariGordinak);
 
                 if (faltan.Any())
                     return (false, "Stock gabe dauden produktu edo osagaiak daude", null, faltan);
@@ -534,7 +656,8 @@ namespace ErronkaApi.Repositorioak
                     komensalak = dto.Komensalak,
                     egoera = "irekita",
                     sukaldeaEgoera = "bidalita",
-                    sortzeData = DateTime.Now,
+                    sortzeData = SortuEskaerarenData(dto.Data, dto.Txanda),
+                    txanda = NormalizeTxanda(dto.Txanda),
                     mahaia_id = dto.MahaiaId,
                     erreserbaId = dto.ErreserbaId
                 };
@@ -555,6 +678,7 @@ namespace ErronkaApi.Repositorioak
                     eskaera.komensalak = Math.Max(eskaera.komensalak, dto.Komensalak);
                     eskaera.egoera = "irekita";
                     eskaera.sukaldeaEgoera = "bidalita";
+                    eskaera.txanda = NormalizeTxanda(dto.Txanda);
 
                     if (!eskaera.erreserbaId.HasValue && dto.ErreserbaId.HasValue)
                         eskaera.erreserbaId = dto.ErreserbaId;
@@ -582,6 +706,7 @@ namespace ErronkaApi.Repositorioak
             try
             {
                 using var session = _sessionFactory.OpenSession();
+                ZiurtatuEskaerenTxandaZutabea(session);
 
                 var lista = session.Query<Eskaera>()
                     .Where(e => e.egoera == "irekita")
@@ -604,6 +729,7 @@ namespace ErronkaApi.Repositorioak
             try
             {
                 using var session = _sessionFactory.OpenSession();
+                ZiurtatuEskaerenTxandaZutabea(session);
                 var eskaera = GetEskaeraAktiboaMahaiarentzat(session, mahaiaId, data, txanda);
 
                 if (eskaera == null)
@@ -652,6 +778,7 @@ namespace ErronkaApi.Repositorioak
 
             try
             {
+                ZiurtatuEskaerenTxandaZutabea(session);
                 var eskaera = GetEskaera(session, eskaeraId);
                 if (eskaera == null)
                     return (false, "Eskaera ez da aurkitu");
@@ -716,12 +843,16 @@ namespace ErronkaApi.Repositorioak
 
             try
             {
+                ZiurtatuEskaerenTxandaZutabea(session);
                 var eskaera = GetEskaera(session, eskaeraId);
                 if (eskaera == null)
                     return (false, "Eskaera ez da aurkitu", null);
 
                 if (EskaeraBlokeatutaDago(eskaera))
                     return (false, "Eskaera ordainketa pendiente edo itxita dago; ezin da gehiago aldatu", null);
+
+                if (dto.Komensalak <= 0)
+                    return (false, "Komensalak 1 edo handiagoa izan behar dira", null);
 
                 var produktuEskariak = dto.Produktuak?
                     .Select(p => new ProduktuEskaria
@@ -768,6 +899,7 @@ namespace ErronkaApi.Repositorioak
 
             try
             {
+                ZiurtatuEskaerenTxandaZutabea(session);
                 var eskaera = GetEskaera(session, eskaeraId);
                 if (eskaera == null)
                     return (false, "Eskaera ez da aurkitu");
@@ -799,9 +931,13 @@ namespace ErronkaApi.Repositorioak
 
             try
             {
+                ZiurtatuEskaerenTxandaZutabea(session);
                 var eskaera = GetEskaera(session, eskaeraId);
                 if (eskaera == null)
                     return (false, "Eskaera ez da aurkitu");
+
+                if (EskaeraBlokeatutaDago(eskaera))
+                    return (false, "Eskaera ordainketa pendiente edo itxita dago; ezin da gehiago aldatu");
 
                 var deskontuPortzentaia = NormalizatuDeskontuPortzentaia(dto?.DeskontuPortzentaia);
                 var deskontuKodea = GarbituDeskontuKodea(dto?.DeskontuKodea);
@@ -812,7 +948,22 @@ namespace ErronkaApi.Repositorioak
                 if (deskontuPortzentaia == 0)
                     deskontuKodea = null;
 
+                if (deskontuKodea != null)
+                {
+                    var (baliozkoa, errorea, portzentaiaBalioztatua) = BalioztatuDeskontuKodea(deskontuKodea);
+                    if (!baliozkoa)
+                        return (false, errorea ?? "Kodea ez da zuzena edo ez dago aktibo.");
+
+                    if (deskontuPortzentaia > 0 && deskontuPortzentaia != portzentaiaBalioztatua)
+                        return (false, "Deskontuaren balioa ez dator bat kodearekin.");
+
+                    deskontuPortzentaia = portzentaiaBalioztatua;
+                }
+
                 var azpitotala = KalkulatuEskaeraGuztira(session, eskaeraId);
+                if (azpitotala <= 0)
+                    return (false, "Eskaerak gutxienez produktu bat behar du");
+
                 var guztira = deskontuPortzentaia > 0
                     ? KalkulatuDeskontuarekin(azpitotala, deskontuPortzentaia)
                     : BiribilduDirua(azpitotala);
@@ -841,13 +992,21 @@ namespace ErronkaApi.Repositorioak
 
             try
             {
+                ZiurtatuEskaerenTxandaZutabea(session);
                 var eskaera = GetEskaera(session, eskaeraId);
                 if (eskaera == null)
                     return (false, "Eskaera ez da aurkitu", null);
 
+                if (!SukaldeaEgindaDago(eskaera.sukaldeaEgoera))
+                    return (false, "Ezin da tiketa sortu sukaldeko egoera 'eginda' izan arte.", null);
+
                 var produktuak = session.Query<EskaeraProduktuak>()
                     .Where(p => p.Eskaera.id == eskaeraId)
                     .ToList();
+
+                if (!produktuak.Any())
+                    return (false, "Eskaerak gutxienez produktu bat behar du", null);
+
                 var deskontua = LortuEskaerarenDeskontua(session, eskaeraId);
                 var deskontuPortzentaia = NormalizatuDeskontuPortzentaia(deskontua.Portzentaia);
                 var deskontuKodea = GarbituDeskontuKodea(deskontua.Kodea);
@@ -974,6 +1133,7 @@ namespace ErronkaApi.Repositorioak
             try
             {
                 using var session = _sessionFactory.OpenSession();
+                ZiurtatuEskaerenTxandaZutabea(session);
 
                 var lista = session.Query<Eskaera>()
                     .Where(e => e.egoera == "ordainketa_pendiente")
@@ -987,6 +1147,12 @@ namespace ErronkaApi.Repositorioak
             {
                 return (false, ex.Message, null);
             }
+        }
+
+        private sealed class OdooDeskontuEmaitzaBarne
+        {
+            public bool ExistitzenDa { get; set; }
+            public double Balioa { get; set; }
         }
     }
 }

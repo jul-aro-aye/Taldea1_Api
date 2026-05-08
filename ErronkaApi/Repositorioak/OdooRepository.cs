@@ -140,11 +140,20 @@ namespace ErronkaApi.Repositorioak
                 sukaldeaEgoera = eskaera.sukaldeaEgoera ?? string.Empty,
                 sortzeData = eskaera.sortzeData,
                 itxieraData = eskaera.itxieraData,
-                txanda = InferituTxanda(eskaera.sortzeData),
+                txanda = string.IsNullOrWhiteSpace(eskaera.txanda)
+                    ? InferituTxanda(eskaera.sortzeData)
+                    : FormateatuTxanda(eskaera.txanda),
                 lerroak = eskaera.EskaeraProduktuak
                     .Select(MapToEskaeraLerroDTO)
                     .ToList()
             };
+        }
+
+        private static string FormateatuTxanda(string? txanda)
+        {
+            return string.Equals(txanda, "afaria", StringComparison.OrdinalIgnoreCase)
+                ? "Afaria"
+                : "Bazkaria";
         }
 
         private static OdooEskaeraLerroDTO MapToEskaeraLerroDTO(EskaeraProduktuak lerroa)

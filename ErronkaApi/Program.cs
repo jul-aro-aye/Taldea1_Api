@@ -3,6 +3,7 @@ using ErronkaApi.Logak;
 using ErronkaApi.Middlewareak;
 using ErronkaApi.NHibernate;
 using ErronkaApi.Repositorioak;
+using NHibernate;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,6 +51,35 @@ builder.Services.AddTransient<FakturaRepository>();
 builder.Services.AddTransient<OdooRepository>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var sessionFactory = scope.ServiceProvider.GetRequiredService<ISessionFactory>();
+    using var session = sessionFactory.OpenSession();
+    using var tx = session.BeginTransaction();
+
+    session.CreateSQLQuery(@"
+        ALTER TABLE eskaerak
+        ADD COLUMN IF NOT EXISTS txanda VARCHAR(20) NULL AFTER sortze_data")
+        .ExecuteUpdate();
+
+    session.CreateSQLQuery(@"
+        UPDATE eskaerak e
+        LEFT JOIN erreserbak r ON r.id = e.erreserba_id
+        SET e.txanda = CASE
+            WHEN r.txanda IS NOT NULL AND TRIM(r.txanda) <> '' THEN
+                CASE
+                    WHEN LOWER(TRIM(r.txanda)) = 'afaria' THEN 'afaria'
+                    ELSE 'bazkaria'
+                END
+            WHEN HOUR(e.sortze_data) >= 18 THEN 'afaria'
+            ELSE 'bazkaria'
+        END
+        WHERE e.txanda IS NULL OR TRIM(e.txanda) = ''")
+        .ExecuteUpdate();
+
+    tx.Commit();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

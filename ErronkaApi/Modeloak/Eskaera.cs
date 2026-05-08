@@ -12,6 +12,7 @@ namespace ErronkaApi.Modeloak
         public virtual string egoera { get; set; }
         public virtual string sukaldeaEgoera { get; set; }
         public virtual DateTime sortzeData { get; set; }
+        public virtual string? txanda { get; set; }
         public virtual DateTime? itxieraData { get; set; }
         public virtual int? erreserbaId { get; set; }
 
