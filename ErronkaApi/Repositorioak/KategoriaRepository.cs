@@ -27,6 +27,7 @@ namespace ErronkaApi.Repositorioak
 
                 var lista = session.Query<Kategoria>()
                     .Select(MapToDTO)
+                    .OrderBy(k => k.id)
                     .ToList();
 
                 return (true, null, lista);
