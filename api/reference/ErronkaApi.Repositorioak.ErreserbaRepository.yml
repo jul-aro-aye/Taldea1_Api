@@ -1,0 +1,1129 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository
+  commentId: T:ErronkaApi.Repositorioak.ErreserbaRepository
+  id: ErreserbaRepository
+  parent: ErronkaApi.Repositorioak
+  children:
+  - ErronkaApi.Repositorioak.ErreserbaRepository.#ctor(NHibernate.ISessionFactory)
+  - ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba(System.Int32,ErronkaApi.DTOak.ErreserbaDTO)
+  - ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba(System.Int32)
+  - ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia(System.Int32,System.Int32)
+  - ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak
+  - ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera(System.DateTime)
+  - ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat(System.Int32)
+  - ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba(ErronkaApi.DTOak.ErreserbaDTO)
+  langs:
+  - csharp
+  - vb
+  name: ErreserbaRepository
+  nameWithType: ErreserbaRepository
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: ErreserbaRepository
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 7
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public class ErreserbaRepository
+    content.vb: Public Class ErreserbaRepository
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.#ctor(NHibernate.ISessionFactory)
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.#ctor(NHibernate.ISessionFactory)
+  id: '#ctor(NHibernate.ISessionFactory)'
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: ErreserbaRepository(ISessionFactory)
+  nameWithType: ErreserbaRepository.ErreserbaRepository(ISessionFactory)
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.ErreserbaRepository(NHibernate.ISessionFactory)
+  type: Constructor
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: .ctor
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 11
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public ErreserbaRepository(ISessionFactory sessionFactory)
+    parameters:
+    - id: sessionFactory
+      type: NHibernate.ISessionFactory
+    content.vb: Public Sub New(sessionFactory As ISessionFactory)
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.#ctor*
+  nameWithType.vb: ErreserbaRepository.New(ISessionFactory)
+  fullName.vb: ErronkaApi.Repositorioak.ErreserbaRepository.New(NHibernate.ISessionFactory)
+  name.vb: New(ISessionFactory)
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak
+  id: LortuErreserbak
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: LortuErreserbak()
+  nameWithType: ErreserbaRepository.LortuErreserbak()
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuErreserbak
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 16
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public virtual (bool success, string? error, List<ErreserbaDTO>? data) LortuErreserbak()
+    return:
+      type: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}
+    content.vb: Public Overridable Function LortuErreserbak() As (success As Boolean, [error] As String, data As List(Of ErreserbaDTO))
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak*
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera(System.DateTime)
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera(System.DateTime)
+  id: LortuErreserbakDatarenArabera(System.DateTime)
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: LortuErreserbakDatarenArabera(DateTime)
+  nameWithType: ErreserbaRepository.LortuErreserbakDatarenArabera(DateTime)
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuErreserbakDatarenArabera
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 38
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public virtual (bool success, string? error, List<ErreserbaDTO>? data) LortuErreserbakDatarenArabera(DateTime data)
+    parameters:
+    - id: data
+      type: System.DateTime
+    return:
+      type: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}
+    content.vb: Public Overridable Function LortuErreserbakDatarenArabera(data As Date) As (success As Boolean, [error] As String, data As List(Of ErreserbaDTO))
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera*
+  nameWithType.vb: ErreserbaRepository.LortuErreserbakDatarenArabera(Date)
+  fullName.vb: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera(Date)
+  name.vb: LortuErreserbakDatarenArabera(Date)
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba(ErronkaApi.DTOak.ErreserbaDTO)
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba(ErronkaApi.DTOak.ErreserbaDTO)
+  id: SortuErreserba(ErronkaApi.DTOak.ErreserbaDTO)
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: SortuErreserba(ErreserbaDTO)
+  nameWithType: ErreserbaRepository.SortuErreserba(ErreserbaDTO)
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba(ErronkaApi.DTOak.ErreserbaDTO)
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: SortuErreserba
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 62
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public virtual (bool success, string? error, ErreserbaDTO? data) SortuErreserba(ErreserbaDTO dto)
+    parameters:
+    - id: dto
+      type: ErronkaApi.DTOak.ErreserbaDTO
+    return:
+      type: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}
+    content.vb: Public Overridable Function SortuErreserba(dto As ErreserbaDTO) As (success As Boolean, [error] As String, data As ErreserbaDTO)
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba*
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba(System.Int32,ErronkaApi.DTOak.ErreserbaDTO)
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba(System.Int32,ErronkaApi.DTOak.ErreserbaDTO)
+  id: EguneratuErreserba(System.Int32,ErronkaApi.DTOak.ErreserbaDTO)
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: EguneratuErreserba(int, ErreserbaDTO)
+  nameWithType: ErreserbaRepository.EguneratuErreserba(int, ErreserbaDTO)
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba(int, ErronkaApi.DTOak.ErreserbaDTO)
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EguneratuErreserba
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 97
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public virtual (bool success, string? error, ErreserbaDTO? data) EguneratuErreserba(int id, ErreserbaDTO dto)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: dto
+      type: ErronkaApi.DTOak.ErreserbaDTO
+    return:
+      type: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}
+    content.vb: Public Overridable Function EguneratuErreserba(id As Integer, dto As ErreserbaDTO) As (success As Boolean, [error] As String, data As ErreserbaDTO)
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba*
+  nameWithType.vb: ErreserbaRepository.EguneratuErreserba(Integer, ErreserbaDTO)
+  fullName.vb: ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba(Integer, ErronkaApi.DTOak.ErreserbaDTO)
+  name.vb: EguneratuErreserba(Integer, ErreserbaDTO)
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba(System.Int32)
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba(System.Int32)
+  id: EzabatuErreserba(System.Int32)
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: EzabatuErreserba(int)
+  nameWithType: ErreserbaRepository.EzabatuErreserba(int)
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba(int)
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EzabatuErreserba
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 148
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public virtual (bool success, string? error) EzabatuErreserba(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.ValueTuple{System.Boolean,System.String}
+    content.vb: Public Overridable Function EzabatuErreserba(id As Integer) As (success As Boolean, [error] As String)
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba*
+  nameWithType.vb: ErreserbaRepository.EzabatuErreserba(Integer)
+  fullName.vb: ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba(Integer)
+  name.vb: EzabatuErreserba(Integer)
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia(System.Int32,System.Int32)
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia(System.Int32,System.Int32)
+  id: EzarriMahaia(System.Int32,System.Int32)
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: EzarriMahaia(int, int)
+  nameWithType: ErreserbaRepository.EzarriMahaia(int, int)
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia(int, int)
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EzarriMahaia
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 170
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public virtual (bool success, string? error, int? data) EzarriMahaia(int erreserbaId, int mahaiaId)
+    parameters:
+    - id: erreserbaId
+      type: System.Int32
+    - id: mahaiaId
+      type: System.Int32
+    return:
+      type: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}
+    content.vb: Public Overridable Function EzarriMahaia(erreserbaId As Integer, mahaiaId As Integer) As (success As Boolean, [error] As String, data As Integer?)
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia*
+  nameWithType.vb: ErreserbaRepository.EzarriMahaia(Integer, Integer)
+  fullName.vb: ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia(Integer, Integer)
+  name.vb: EzarriMahaia(Integer, Integer)
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat(System.Int32)
+  commentId: M:ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat(System.Int32)
+  id: LortuMahaiakErreserbarentzat(System.Int32)
+  parent: ErronkaApi.Repositorioak.ErreserbaRepository
+  langs:
+  - csharp
+  - vb
+  name: LortuMahaiakErreserbarentzat(int)
+  nameWithType: ErreserbaRepository.LortuMahaiakErreserbarentzat(int)
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat(int)
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuMahaiakErreserbarentzat
+    path: ErronkaApi/Repositorioak/ErreserbaRepository.cs
+    startLine: 256
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Repositorioak
+  syntax:
+    content: public virtual (bool success, string? error, List<int>? data) LortuMahaiakErreserbarentzat(int erreserbaId)
+    parameters:
+    - id: erreserbaId
+      type: System.Int32
+    return:
+      type: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}
+    content.vb: Public Overridable Function LortuMahaiakErreserbarentzat(erreserbaId As Integer) As (success As Boolean, [error] As String, data As List(Of Integer))
+  overload: ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat*
+  nameWithType.vb: ErreserbaRepository.LortuMahaiakErreserbarentzat(Integer)
+  fullName.vb: ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat(Integer)
+  name.vb: LortuMahaiakErreserbarentzat(Integer)
+references:
+- uid: ErronkaApi.Repositorioak
+  commentId: N:ErronkaApi.Repositorioak
+  href: ErronkaApi.html
+  name: ErronkaApi.Repositorioak
+  nameWithType: ErronkaApi.Repositorioak
+  fullName: ErronkaApi.Repositorioak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Repositorioak
+    name: Repositorioak
+    href: ErronkaApi.Repositorioak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Repositorioak
+    name: Repositorioak
+    href: ErronkaApi.Repositorioak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.#ctor*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.#ctor
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository__ctor_NHibernate_ISessionFactory_
+  name: ErreserbaRepository
+  nameWithType: ErreserbaRepository.ErreserbaRepository
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.ErreserbaRepository
+  nameWithType.vb: ErreserbaRepository.New
+  fullName.vb: ErronkaApi.Repositorioak.ErreserbaRepository.New
+  name.vb: New
+- uid: NHibernate.ISessionFactory
+  commentId: T:NHibernate.ISessionFactory
+  parent: NHibernate
+  isExternal: true
+  name: ISessionFactory
+  nameWithType: ISessionFactory
+  fullName: NHibernate.ISessionFactory
+- uid: NHibernate
+  commentId: N:NHibernate
+  isExternal: true
+  name: NHibernate
+  nameWithType: NHibernate
+  fullName: NHibernate
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository_LortuErreserbak
+  name: LortuErreserbak
+  nameWithType: ErreserbaRepository.LortuErreserbak
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbak
+- uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}
+  commentId: T:System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool success, string error, List<ErreserbaDTO> data)
+  nameWithType: (bool success, string error, List<ErreserbaDTO> data)
+  fullName: (bool success, string error, System.Collections.Generic.List<ErronkaApi.DTOak.ErreserbaDTO> data)
+  nameWithType.vb: (success As Boolean, error As String, data As List(Of ErreserbaDTO))
+  fullName.vb: (success As Boolean, error As String, data As System.Collections.Generic.List(Of ErronkaApi.DTOak.ErreserbaDTO))
+  name.vb: (success As Boolean, error As String, data As List(Of ErreserbaDTO))
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-erronkaapi.dtoak.erreserbadto--.success
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-erronkaapi.dtoak.erreserbadto--.error
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ErronkaApi.DTOak.ErreserbaDTO
+    name: ErreserbaDTO
+    href: ErronkaApi.DTOak.ErreserbaDTO.html
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-erronkaapi.dtoak.erreserbadto--.data
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-erronkaapi.dtoak.erreserbadto--.success
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-erronkaapi.dtoak.erreserbadto--.error
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{ErronkaApi.DTOak.ErreserbaDTO}}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-erronkaapi.dtoak.erreserbadto--.data
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ErronkaApi.DTOak.ErreserbaDTO
+    name: ErreserbaDTO
+    href: ErronkaApi.DTOak.ErreserbaDTO.html
+  - name: )
+  - name: )
+- uid: System.ValueTuple`3
+  commentId: T:System.ValueTuple`3
+  name: (T1, T2, T3)
+  nameWithType: (T1, T2, T3)
+  fullName: (T1, T2, T3)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository_LortuErreserbakDatarenArabera_System_DateTime_
+  name: LortuErreserbakDatarenArabera
+  nameWithType: ErreserbaRepository.LortuErreserbakDatarenArabera
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.LortuErreserbakDatarenArabera
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository_SortuErreserba_ErronkaApi_DTOak_ErreserbaDTO_
+  name: SortuErreserba
+  nameWithType: ErreserbaRepository.SortuErreserba
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.SortuErreserba
+- uid: ErronkaApi.DTOak.ErreserbaDTO
+  commentId: T:ErronkaApi.DTOak.ErreserbaDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.ErreserbaDTO.html
+  name: ErreserbaDTO
+  nameWithType: ErreserbaDTO
+  fullName: ErronkaApi.DTOak.ErreserbaDTO
+- uid: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}
+  commentId: T:System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool success, string error, ErreserbaDTO data)
+  nameWithType: (bool success, string error, ErreserbaDTO data)
+  fullName: (bool success, string error, ErronkaApi.DTOak.ErreserbaDTO data)
+  nameWithType.vb: (success As Boolean, error As String, data As ErreserbaDTO)
+  fullName.vb: (success As Boolean, error As String, data As ErronkaApi.DTOak.ErreserbaDTO)
+  name.vb: (success As Boolean, error As String, data As ErreserbaDTO)
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,erronkaapi.dtoak.erreserbadto-.success
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,erronkaapi.dtoak.erreserbadto-.error
+  - name: ','
+  - name: " "
+  - uid: ErronkaApi.DTOak.ErreserbaDTO
+    name: ErreserbaDTO
+    href: ErronkaApi.DTOak.ErreserbaDTO.html
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,erronkaapi.dtoak.erreserbadto-.data
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,erronkaapi.dtoak.erreserbadto-.success
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,erronkaapi.dtoak.erreserbadto-.error
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,ErronkaApi.DTOak.ErreserbaDTO}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,erronkaapi.dtoak.erreserbadto-.data
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: ErronkaApi.DTOak.ErreserbaDTO
+    name: ErreserbaDTO
+    href: ErronkaApi.DTOak.ErreserbaDTO.html
+  - name: )
+- uid: ErronkaApi.DTOak
+  commentId: N:ErronkaApi.DTOak
+  href: ErronkaApi.html
+  name: ErronkaApi.DTOak
+  nameWithType: ErronkaApi.DTOak
+  fullName: ErronkaApi.DTOak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository_EguneratuErreserba_System_Int32_ErronkaApi_DTOak_ErreserbaDTO_
+  name: EguneratuErreserba
+  nameWithType: ErreserbaRepository.EguneratuErreserba
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.EguneratuErreserba
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository_EzabatuErreserba_System_Int32_
+  name: EzabatuErreserba
+  nameWithType: ErreserbaRepository.EzabatuErreserba
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.EzabatuErreserba
+- uid: System.ValueTuple{System.Boolean,System.String}
+  commentId: T:System.ValueTuple{System.Boolean,System.String}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool success, string error)
+  nameWithType: (bool success, string error)
+  fullName: (bool success, string error)
+  nameWithType.vb: (success As Boolean, error As String)
+  fullName.vb: (success As Boolean, error As String)
+  name.vb: (success As Boolean, error As String)
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.success
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.error
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Boolean,System.String}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.success
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.error
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository_EzarriMahaia_System_Int32_System_Int32_
+  name: EzarriMahaia
+  nameWithType: ErreserbaRepository.EzarriMahaia
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.EzarriMahaia
+- uid: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}
+  commentId: T:System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool success, string error, int? data)
+  nameWithType: (bool success, string error, int? data)
+  fullName: (bool success, string error, int? data)
+  nameWithType.vb: (success As Boolean, error As String, data As Integer?)
+  fullName.vb: (success As Boolean, error As String, data As Integer?)
+  name.vb: (success As Boolean, error As String, data As Integer?)
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.nullable-system.int32--.success
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.nullable-system.int32--.error
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.nullable-system.int32--.data
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.nullable-system.int32--.success
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.nullable-system.int32--.error
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Nullable{System.Int32}}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.nullable-system.int32--.data
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat*
+  commentId: Overload:ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html#ErronkaApi_Repositorioak_ErreserbaRepository_LortuMahaiakErreserbarentzat_System_Int32_
+  name: LortuMahaiakErreserbarentzat
+  nameWithType: ErreserbaRepository.LortuMahaiakErreserbarentzat
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository.LortuMahaiakErreserbarentzat
+- uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}
+  commentId: T:System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool success, string error, List<int> data)
+  nameWithType: (bool success, string error, List<int> data)
+  fullName: (bool success, string error, System.Collections.Generic.List<int> data)
+  nameWithType.vb: (success As Boolean, error As String, data As List(Of Integer))
+  fullName.vb: (success As Boolean, error As String, data As System.Collections.Generic.List(Of Integer))
+  name.vb: (success As Boolean, error As String, data As List(Of Integer))
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-system.int32--.success
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-system.int32--.error
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-system.int32--.data
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}.success
+    name: success
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-system.int32--.success
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}.error
+    name: error
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-system.int32--.error
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String,System.Collections.Generic.List{System.Int32}}.data
+    name: data
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string,system.collections.generic.list-system.int32--.data
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )

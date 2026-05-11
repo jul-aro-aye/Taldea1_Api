@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.DTOak
+  commentId: N:ErronkaApi.DTOak
+  id: ErronkaApi.DTOak
+  children:
+  - ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  - ErronkaApi.DTOak.ErabiltzaileaSortuDTO
+  - ErronkaApi.DTOak.ErantzunaDTO`1
+  - ErronkaApi.DTOak.ErreserbaDTO
+  - ErronkaApi.DTOak.ErreserbaMahaiDTO
+  - ErronkaApi.DTOak.EskaeraDTO
+  - ErronkaApi.DTOak.EskaeraEguneratuDTO
+  - ErronkaApi.DTOak.EskaeraLortuDTO
+  - ErronkaApi.DTOak.EskaeraOrdainduDTO
+  - ErronkaApi.DTOak.EskaeraProduktuaDTO
+  - ErronkaApi.DTOak.EskaeraProduktuaEditatuDTO
+  - ErronkaApi.DTOak.EskaeraProduktuaSortuDTO
+  - ErronkaApi.DTOak.EskaeraSortuDTO
+  - ErronkaApi.DTOak.EskaeraSukaldeaEgoeraDTO
+  - ErronkaApi.DTOak.FakturaDTO
+  - ErronkaApi.DTOak.FakturaErreserbaSortuDTO
+  - ErronkaApi.DTOak.FakturaTotalaEguneratuDTO
+  - ErronkaApi.DTOak.KategoriaDTO
+  - ErronkaApi.DTOak.LogDTO
+  - ErronkaApi.DTOak.LoginDTO
+  - ErronkaApi.DTOak.MahaiaDTO
+  - ErronkaApi.DTOak.OdooEskaeraDTO
+  - ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  - ErronkaApi.DTOak.OdooMahaiaDTO
+  - ErronkaApi.DTOak.OdooProduktuaDTO
+  - ErronkaApi.DTOak.OdooSyncDTO
+  - ErronkaApi.DTOak.OdooZerbitzariaDTO
+  - ErronkaApi.DTOak.ProduktuaDTO
+  langs:
+  - csharp
+  - vb
+  name: ErronkaApi.DTOak
+  nameWithType: ErronkaApi.DTOak
+  fullName: ErronkaApi.DTOak
+  type: Namespace
+  assemblies:
+  - ErronkaApi
+references:
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  commentId: T:ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  href: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.html
+  name: ErabiltzaileaLoginDTO
+  nameWithType: ErabiltzaileaLoginDTO
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+- uid: ErronkaApi.DTOak.ErabiltzaileaSortuDTO
+  commentId: T:ErronkaApi.DTOak.ErabiltzaileaSortuDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.ErabiltzaileaSortuDTO.html
+  name: ErabiltzaileaSortuDTO
+  nameWithType: ErabiltzaileaSortuDTO
+  fullName: ErronkaApi.DTOak.ErabiltzaileaSortuDTO
+- uid: ErronkaApi.DTOak.ErantzunaDTO`1
+  commentId: T:ErronkaApi.DTOak.ErantzunaDTO`1
+  href: ErronkaApi.DTOak.ErantzunaDTO-1.html
+  name: ErantzunaDTO<T>
+  nameWithType: ErantzunaDTO<T>
+  fullName: ErronkaApi.DTOak.ErantzunaDTO<T>
+  nameWithType.vb: ErantzunaDTO(Of T)
+  fullName.vb: ErronkaApi.DTOak.ErantzunaDTO(Of T)
+  name.vb: ErantzunaDTO(Of T)
+  spec.csharp:
+  - uid: ErronkaApi.DTOak.ErantzunaDTO`1
+    name: ErantzunaDTO
+    href: ErronkaApi.DTOak.ErantzunaDTO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: ErronkaApi.DTOak.ErantzunaDTO`1
+    name: ErantzunaDTO
+    href: ErronkaApi.DTOak.ErantzunaDTO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ErronkaApi.DTOak.ErreserbaDTO
+  commentId: T:ErronkaApi.DTOak.ErreserbaDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.ErreserbaDTO.html
+  name: ErreserbaDTO
+  nameWithType: ErreserbaDTO
+  fullName: ErronkaApi.DTOak.ErreserbaDTO
+- uid: ErronkaApi.DTOak.ErreserbaMahaiDTO
+  commentId: T:ErronkaApi.DTOak.ErreserbaMahaiDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.ErreserbaMahaiDTO.html
+  name: ErreserbaMahaiDTO
+  nameWithType: ErreserbaMahaiDTO
+  fullName: ErronkaApi.DTOak.ErreserbaMahaiDTO
+- uid: ErronkaApi.DTOak.EskaeraDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraDTO
+  href: ErronkaApi.DTOak.EskaeraDTO.html
+  name: EskaeraDTO
+  nameWithType: EskaeraDTO
+  fullName: ErronkaApi.DTOak.EskaeraDTO
+- uid: ErronkaApi.DTOak.EskaeraEguneratuDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraEguneratuDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.EskaeraEguneratuDTO.html
+  name: EskaeraEguneratuDTO
+  nameWithType: EskaeraEguneratuDTO
+  fullName: ErronkaApi.DTOak.EskaeraEguneratuDTO
+- uid: ErronkaApi.DTOak.EskaeraLortuDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraLortuDTO
+  href: ErronkaApi.DTOak.EskaeraLortuDTO.html
+  name: EskaeraLortuDTO
+  nameWithType: EskaeraLortuDTO
+  fullName: ErronkaApi.DTOak.EskaeraLortuDTO
+- uid: ErronkaApi.DTOak.EskaeraOrdainduDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraOrdainduDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.EskaeraOrdainduDTO.html
+  name: EskaeraOrdainduDTO
+  nameWithType: EskaeraOrdainduDTO
+  fullName: ErronkaApi.DTOak.EskaeraOrdainduDTO
+- uid: ErronkaApi.DTOak.EskaeraProduktuaDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraProduktuaDTO
+  href: ErronkaApi.DTOak.EskaeraProduktuaDTO.html
+  name: EskaeraProduktuaDTO
+  nameWithType: EskaeraProduktuaDTO
+  fullName: ErronkaApi.DTOak.EskaeraProduktuaDTO
+- uid: ErronkaApi.DTOak.EskaeraProduktuaEditatuDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraProduktuaEditatuDTO
+  href: ErronkaApi.DTOak.EskaeraProduktuaEditatuDTO.html
+  name: EskaeraProduktuaEditatuDTO
+  nameWithType: EskaeraProduktuaEditatuDTO
+  fullName: ErronkaApi.DTOak.EskaeraProduktuaEditatuDTO
+- uid: ErronkaApi.DTOak.EskaeraProduktuaSortuDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraProduktuaSortuDTO
+  href: ErronkaApi.DTOak.EskaeraProduktuaSortuDTO.html
+  name: EskaeraProduktuaSortuDTO
+  nameWithType: EskaeraProduktuaSortuDTO
+  fullName: ErronkaApi.DTOak.EskaeraProduktuaSortuDTO
+- uid: ErronkaApi.DTOak.EskaeraSortuDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraSortuDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.EskaeraSortuDTO.html
+  name: EskaeraSortuDTO
+  nameWithType: EskaeraSortuDTO
+  fullName: ErronkaApi.DTOak.EskaeraSortuDTO
+- uid: ErronkaApi.DTOak.EskaeraSukaldeaEgoeraDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraSukaldeaEgoeraDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.EskaeraSukaldeaEgoeraDTO.html
+  name: EskaeraSukaldeaEgoeraDTO
+  nameWithType: EskaeraSukaldeaEgoeraDTO
+  fullName: ErronkaApi.DTOak.EskaeraSukaldeaEgoeraDTO
+- uid: ErronkaApi.DTOak.FakturaDTO
+  commentId: T:ErronkaApi.DTOak.FakturaDTO
+  href: ErronkaApi.DTOak.FakturaDTO.html
+  name: FakturaDTO
+  nameWithType: FakturaDTO
+  fullName: ErronkaApi.DTOak.FakturaDTO
+- uid: ErronkaApi.DTOak.FakturaErreserbaSortuDTO
+  commentId: T:ErronkaApi.DTOak.FakturaErreserbaSortuDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.FakturaErreserbaSortuDTO.html
+  name: FakturaErreserbaSortuDTO
+  nameWithType: FakturaErreserbaSortuDTO
+  fullName: ErronkaApi.DTOak.FakturaErreserbaSortuDTO
+- uid: ErronkaApi.DTOak.FakturaTotalaEguneratuDTO
+  commentId: T:ErronkaApi.DTOak.FakturaTotalaEguneratuDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.FakturaTotalaEguneratuDTO.html
+  name: FakturaTotalaEguneratuDTO
+  nameWithType: FakturaTotalaEguneratuDTO
+  fullName: ErronkaApi.DTOak.FakturaTotalaEguneratuDTO
+- uid: ErronkaApi.DTOak.KategoriaDTO
+  commentId: T:ErronkaApi.DTOak.KategoriaDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.KategoriaDTO.html
+  name: KategoriaDTO
+  nameWithType: KategoriaDTO
+  fullName: ErronkaApi.DTOak.KategoriaDTO
+- uid: ErronkaApi.DTOak.LogDTO
+  commentId: T:ErronkaApi.DTOak.LogDTO
+  href: ErronkaApi.DTOak.LogDTO.html
+  name: LogDTO
+  nameWithType: LogDTO
+  fullName: ErronkaApi.DTOak.LogDTO
+- uid: ErronkaApi.DTOak.LoginDTO
+  commentId: T:ErronkaApi.DTOak.LoginDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.LoginDTO.html
+  name: LoginDTO
+  nameWithType: LoginDTO
+  fullName: ErronkaApi.DTOak.LoginDTO
+- uid: ErronkaApi.DTOak.MahaiaDTO
+  commentId: T:ErronkaApi.DTOak.MahaiaDTO
+  href: ErronkaApi.DTOak.MahaiaDTO.html
+  name: MahaiaDTO
+  nameWithType: MahaiaDTO
+  fullName: ErronkaApi.DTOak.MahaiaDTO
+- uid: ErronkaApi.DTOak.OdooSyncDTO
+  commentId: T:ErronkaApi.DTOak.OdooSyncDTO
+  href: ErronkaApi.DTOak.OdooSyncDTO.html
+  name: OdooSyncDTO
+  nameWithType: OdooSyncDTO
+  fullName: ErronkaApi.DTOak.OdooSyncDTO
+- uid: ErronkaApi.DTOak.OdooZerbitzariaDTO
+  commentId: T:ErronkaApi.DTOak.OdooZerbitzariaDTO
+  href: ErronkaApi.DTOak.OdooZerbitzariaDTO.html
+  name: OdooZerbitzariaDTO
+  nameWithType: OdooZerbitzariaDTO
+  fullName: ErronkaApi.DTOak.OdooZerbitzariaDTO
+- uid: ErronkaApi.DTOak.OdooProduktuaDTO
+  commentId: T:ErronkaApi.DTOak.OdooProduktuaDTO
+  href: ErronkaApi.DTOak.OdooProduktuaDTO.html
+  name: OdooProduktuaDTO
+  nameWithType: OdooProduktuaDTO
+  fullName: ErronkaApi.DTOak.OdooProduktuaDTO
+- uid: ErronkaApi.DTOak.OdooMahaiaDTO
+  commentId: T:ErronkaApi.DTOak.OdooMahaiaDTO
+  href: ErronkaApi.DTOak.OdooMahaiaDTO.html
+  name: OdooMahaiaDTO
+  nameWithType: OdooMahaiaDTO
+  fullName: ErronkaApi.DTOak.OdooMahaiaDTO
+- uid: ErronkaApi.DTOak.OdooEskaeraDTO
+  commentId: T:ErronkaApi.DTOak.OdooEskaeraDTO
+  href: ErronkaApi.DTOak.OdooEskaeraDTO.html
+  name: OdooEskaeraDTO
+  nameWithType: OdooEskaeraDTO
+  fullName: ErronkaApi.DTOak.OdooEskaeraDTO
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  commentId: T:ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  href: ErronkaApi.DTOak.OdooEskaeraLerroDTO.html
+  name: OdooEskaeraLerroDTO
+  nameWithType: OdooEskaeraLerroDTO
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+- uid: ErronkaApi.DTOak.ProduktuaDTO
+  commentId: T:ErronkaApi.DTOak.ProduktuaDTO
+  parent: ErronkaApi.DTOak
+  href: ErronkaApi.DTOak.ProduktuaDTO.html
+  name: ProduktuaDTO
+  nameWithType: ProduktuaDTO
+  fullName: ErronkaApi.DTOak.ProduktuaDTO
+- uid: ErronkaApi.DTOak
+  commentId: N:ErronkaApi.DTOak
+  href: ErronkaApi.html
+  name: ErronkaApi.DTOak
+  nameWithType: ErronkaApi.DTOak
+  fullName: ErronkaApi.DTOak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html

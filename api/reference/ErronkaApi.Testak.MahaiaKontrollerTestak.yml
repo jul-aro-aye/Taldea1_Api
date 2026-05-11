@@ -1,0 +1,513 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak
+  commentId: T:ErronkaApi.Testak.MahaiaKontrollerTestak
+  id: MahaiaKontrollerTestak
+  parent: ErronkaApi.Testak
+  children:
+  - ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  - ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  - ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  - ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  - ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  langs:
+  - csharp
+  - vb
+  name: MahaiaKontrollerTestak
+  nameWithType: MahaiaKontrollerTestak
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: MahaiaKontrollerTestak
+    path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+    startLine: 9
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: public class MahaiaKontrollerTestak
+    content.vb: Public Class MahaiaKontrollerTestak
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  id: LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  parent: ErronkaApi.Testak.MahaiaKontrollerTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu()
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu()
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+    path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+    startLine: 12
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu()
+  overload: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  id: LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  parent: ErronkaApi.Testak.MahaiaKontrollerTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu()
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu()
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+    path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+    startLine: 35
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu()
+  overload: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  id: LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  parent: ErronkaApi.Testak.MahaiaKontrollerTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu()
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu()
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+    path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+    startLine: 56
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu()
+  overload: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  id: LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  parent: ErronkaApi.Testak.MahaiaKontrollerTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu()
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu()
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+    path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+    startLine: 97
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu()
+  overload: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  id: LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  parent: ErronkaApi.Testak.MahaiaKontrollerTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu()
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu()
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+    path: ErronkaApi/Testak/MahaiaKontrollerTestak.cs
+    startLine: 118
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu()
+  overload: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: ErronkaApi.Testak
+  commentId: N:ErronkaApi.Testak
+  href: ErronkaApi.html
+  name: ErronkaApi.Testak
+  nameWithType: ErronkaApi.Testak
+  fullName: ErronkaApi.Testak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Testak
+    name: Testak
+    href: ErronkaApi.Testak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Testak
+    name: Testak
+    href: ErronkaApi.Testak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  href: ErronkaApi.Testak.MahaiaKontrollerTestak.html#ErronkaApi_Testak_MahaiaKontrollerTestak_LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  name: LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  href: ErronkaApi.Testak.MahaiaKontrollerTestak.html#ErronkaApi_Testak_MahaiaKontrollerTestak_LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  name: LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DaturikEzBadago_404ItzuliBeharDu
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  href: ErronkaApi.Testak.MahaiaKontrollerTestak.html#ErronkaApi_Testak_MahaiaKontrollerTestak_LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  name: LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiLibre_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  href: ErronkaApi.Testak.MahaiaKontrollerTestak.html#ErronkaApi_Testak_MahaiaKontrollerTestak_LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  name: LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_EzBadaExistitzen_404ItzuliBeharDu
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  href: ErronkaApi.Testak.MahaiaKontrollerTestak.html#ErronkaApi_Testak_MahaiaKontrollerTestak_LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  name: LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  nameWithType: MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak.LortuMahaiBat_DatuZuzenekin_200EtaMahaiaItzuliBeharDu

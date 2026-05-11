@@ -1,21 +1,37 @@
-﻿using ErronkaApi.DTOak;
+using ErronkaApi.DTOak;
 using ErronkaApi.Repositorioak;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ErronkaApi.Kontrollerrak
 {
+    /// <summary>
+    /// Produktuen kategoriak kudeatzeko balio du.
+    /// </summary>
     [ApiController]
     [Route("api/kategoriak")]
     public class KategoriaKontrollerra : ControllerBase
     {
         private readonly KategoriaRepository _repo;
 
+        /// <summary>
+        /// Kategorien kontrolatzailea hasieratzen du.
+        /// </summary>
+        /// <param name="repo">Kategoriak kudeatzeko biltegia.</param>
         public KategoriaKontrollerra(KategoriaRepository repo)
         {
             _repo = repo;
         }
 
 
+        /// <summary>
+        /// Kategoria guztiak lortzen ditu.
+        /// </summary>
+        /// <remarks>
+        /// Ruta honek kategoria guztiak itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Kategorien zerrenda.
+        /// </returns>
         [HttpGet]
         public IActionResult LortuKategoriak()
         {
@@ -32,6 +48,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Kategoria jakin bat lortzen du bere zenbakia erabiliz.
+        /// </summary>
+        /// <param name="id">Kategoriaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek ID bidez kategoria bilatzen du.
+        /// </remarks>
+        /// <returns>
+        /// Kategoriaren datuak edo errore mezua.
+        /// </returns>
         [HttpGet("{id}")]
         public IActionResult LortuKategoria(int id)
         {
@@ -48,6 +74,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Kategoria berri bat sortzen du.
+        /// </summary>
+        /// <param name="dto">Kategoria berriaren datuak.</param>
+        /// <remarks>
+        /// Ruta honek kategoria berria sortzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Mezua kategoria gehitu dela esanez.
+        /// </returns>
         [HttpPost]
         public IActionResult GehituKategoria([FromBody] KategoriaDTO dto)
         {
@@ -63,6 +99,17 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Kategoria bat aldatzen du.
+        /// </summary>
+        /// <param name="id">Aldatu nahi den kategoriaren ID-a.</param>
+        /// <param name="dto">Kategoriaren datu berriak.</param>
+        /// <remarks>
+        /// Ruta honek kategoria eguneratzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Mezua kategoria eguneratu dela esanez.
+        /// </returns>
         [HttpPut("{id}")]
         public IActionResult EguneratuKategoria(int id, [FromBody] KategoriaDTO dto)
         {
@@ -78,6 +125,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Kategoria bat ezabatzen du.
+        /// </summary>
+        /// <param name="id">Ezabatu nahi den kategoriaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek kategoria ezabatzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Mezua kategoria ezabatu dela esanez.
+        /// </returns>
         [HttpDelete("{id}")]
         public IActionResult EzabatuKategoria(int id)
         {

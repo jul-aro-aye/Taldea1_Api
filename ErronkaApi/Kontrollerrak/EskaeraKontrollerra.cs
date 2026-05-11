@@ -1,20 +1,37 @@
-﻿using ErronkaApi.DTOak;
+using ErronkaApi.DTOak;
 using ErronkaApi.Repositorioak;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ErronkaApi.Kontrollerrak
 {
+    /// <summary>
+    /// Jatetxeko eskarien bizitza osoa kudeatzen du.
+    /// </summary>
     [ApiController]
     [Route("api/eskaerak")]
     public class EskaeraKontrollerra : ControllerBase
     {
         private readonly EskaeraRepository _repo;
 
+        /// <summary>
+        /// Eskarien kontrolatzailea hasieratzen du.
+        /// </summary>
+        /// <param name="repo">Eskariak, stock-a eta fakturak kudeatzeko biltegia.</param>
         public EskaeraKontrollerra(EskaeraRepository repo)
         {
             _repo = repo;
         }
 
+        /// <summary>
+        /// Eskari berri bat sortzen du mahai bati lotuta.
+        /// </summary>
+        /// <param name="dto">Eskaria irekitzeko datuak.</param>
+        /// <remarks>
+        /// Ruta honek eskaera berria sortzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Sortutako eskariaren zenbakia edo errore mezua.
+        /// </returns>
         [HttpPost]
         public IActionResult SortuEskaera([FromBody] EskaeraSortuDTO dto)
         {
@@ -38,6 +55,15 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Une honetan irekita dauden eskari guztiak lortzen ditu.
+        /// </summary>
+        /// <remarks>
+        /// Ruta honek eskaera guztiak itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Eskari guztien zerrenda.
+        /// </returns>
         [HttpGet]
         public IActionResult LortuEskaerak()
         {
@@ -61,6 +87,18 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Mahai batek une honetan duen eskari aktiboa lortzen du.
+        /// </summary>
+        /// <param name="mahaiaId">Mahaiaren ID-a.</param>
+        /// <param name="data">Bilatu nahi den eguna.</param>
+        /// <param name="txanda">Bilatu nahi den txanda.</param>
+        /// <remarks>
+        /// Ruta honek mahai jakin bateko eskaera aktiboa itzultzen du.
+        /// </remarks>
+        /// <returns>
+        /// Eskari aktiboa edo errore mezua.
+        /// </returns>
         [HttpGet("mahaia/{mahaiaId}/aktiboa")]
         public IActionResult LortuEskaeraAktiboaMahaika(
             int mahaiaId,
@@ -87,6 +125,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Eskari baten barruan dauden produktu guztiak lortzen ditu.
+        /// </summary>
+        /// <param name="eskaeraId">Eskariaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek eskaera bati lotutako produktuak itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Produktuen zerrenda edo errore mezua.
+        /// </returns>
         [HttpGet("{eskaeraId}/produktuak")]
         public IActionResult LortuEskaeraProduktuak(int eskaeraId)
         {
@@ -110,6 +158,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Eskari bat ezabatzen du.
+        /// </summary>
+        /// <param name="eskaeraId">Ezabatu nahi den eskariaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek eskaera ezabatzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Mezua eskaria ezabatu dela esanez.
+        /// </returns>
         [HttpDelete("{eskaeraId}")]
         public IActionResult EzabatuEskaera(int eskaeraId)
         {
@@ -133,6 +191,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Mahai baten lekua (kapazitatea) ikusteko.
+        /// </summary>
+        /// <param name="mahaiaId">Mahaiaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek mahai jakin baten kapazitatea itzultzen du.
+        /// </remarks>
+        /// <returns>
+        /// Mahaiaren lekua edo errore mezua.
+        /// </returns>
         [HttpGet("mahaiak/{mahaiaId}/kapazitatea")]
         public IActionResult LortuMahaiKapazitatea(int mahaiaId)
         {
@@ -156,6 +224,17 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Eskari bateko pertsona kopurua edo produktuak aldatzen ditu.
+        /// </summary>
+        /// <param name="eskaeraId">Aldatu nahi den eskariaren ID-a.</param>
+        /// <param name="dto">Eskariaren datu berriak.</param>
+        /// <remarks>
+        /// Ruta honek eskaera eguneratzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Mezua eskaria eguneratu dela esanez.
+        /// </returns>
         [HttpPut("{eskaeraId}")]
         public IActionResult EguneratuEskaera(int eskaeraId, [FromBody] EskaeraEguneratuDTO dto)
         {
@@ -179,6 +258,17 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Eskari baten sukaldeko egoera aldatzen du.
+        /// </summary>
+        /// <param name="eskaeraId">Eskariaren ID-a.</param>
+        /// <param name="dto">Sukaldeko egoera berria.</param>
+        /// <remarks>
+        /// Ruta honek sukaldeko egoera eguneratzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Mezua egoera aldatu dela esanez.
+        /// </returns>
         [HttpPut("{eskaeraId}/sukaldea-egoera")]
         public IActionResult EguneratuSukaldeaEgoera(int eskaeraId, [FromBody] EskaeraSukaldeaEgoeraDTO dto)
         {
@@ -202,6 +292,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Eskaria ordaintzera bidaltzen du (deskonturik gabe).
+        /// </summary>
+        /// <param name="eskaeraId">Eskariaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek eskaera ordaintzera bidaltzen du.
+        /// </remarks>
+        /// <returns>
+        /// Mezua ordainketara bidali dela esanez.
+        /// </returns>
         [HttpPost("{eskaeraId}/ordainduEskaera")]
         public IActionResult OrdainduEskaera(int eskaeraId)
         {
@@ -225,6 +325,17 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Eskaria ordaintzera bidaltzen du deskontu batekin.
+        /// </summary>
+        /// <param name="eskaeraId">Eskariaren ID-a.</param>
+        /// <param name="dto">Deskontuaren datuak.</param>
+        /// <remarks>
+        /// Ruta honek eskaera ordaintzera bidaltzen du deskontu batekin.
+        /// </remarks>
+        /// <returns>
+        /// Mezua ordainketara bidali dela esanez.
+        /// </returns>
         [HttpPost("{eskaeraId}/ordainduEskaeraDeskontuarekin")]
         public IActionResult OrdainduEskaeraDeskontuarekin(int eskaeraId, [FromBody] EskaeraOrdainduDTO dto)
         {
@@ -248,6 +359,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Eskari baten faktura (PDF) sortzen du.
+        /// </summary>
+        /// <param name="eskaeraId">Eskariaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek faktura berria sortzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// PDF fitxategiaren bidea edo errore mezua.
+        /// </returns>
         [HttpPost("{eskaeraId}/sortuFaktura")]
         public IActionResult SortuFaktura(int eskaeraId)
         {
@@ -271,6 +392,15 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Ordaintzeko zain dauden eskariak lortzen ditu.
+        /// </summary>
+        /// <remarks>
+        /// Ruta honek ordaintzeko zain dauden eskaerak itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Eskarien zerrenda.
+        /// </returns>
         [HttpGet("ordainketa-pendiente")]
         public IActionResult LortuEskaerakOrdaintzeko()
         {

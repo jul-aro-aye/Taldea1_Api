@@ -1,0 +1,51 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "ErronkaApi",
+          "files": [
+            "ErronkaApi.csproj"
+          ]
+        }
+      ],
+      "dest": "api/reference",
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "README.md",
+          "introduction.md",
+          "getting-started.md",
+          "toc.yml",
+          "api/toc.yml",
+          "api/index.md",
+          "api/reference/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appTitle": "ApiErronka2 Dokumentazioa",
+      "_appFooter": "ApiErronka2-ren dokumentazioa (DocFX bidez egina)",
+      "_enableSearch": true,
+      "_enablePdf": true,
+      "_downloadPdf": true,
+      "pdf": true
+    }
+  }
+}

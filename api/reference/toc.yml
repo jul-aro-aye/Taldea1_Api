@@ -1,0 +1,131 @@
+### YamlMime:TableOfContent
+items:
+- uid: ErronkaApi.DTOak
+  name: ErronkaApi.DTOak
+  type: Namespace
+  items:
+  - uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+    name: ErabiltzaileaLoginDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.ErabiltzaileaSortuDTO
+    name: ErabiltzaileaSortuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.ErantzunaDTO`1
+    name: ErantzunaDTO<T>
+    type: Class
+  - uid: ErronkaApi.DTOak.ErreserbaDTO
+    name: ErreserbaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.ErreserbaMahaiDTO
+    name: ErreserbaMahaiDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraDTO
+    name: EskaeraDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraEguneratuDTO
+    name: EskaeraEguneratuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraLortuDTO
+    name: EskaeraLortuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraOrdainduDTO
+    name: EskaeraOrdainduDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraProduktuaDTO
+    name: EskaeraProduktuaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraProduktuaEditatuDTO
+    name: EskaeraProduktuaEditatuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraProduktuaSortuDTO
+    name: EskaeraProduktuaSortuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraSortuDTO
+    name: EskaeraSortuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.EskaeraSukaldeaEgoeraDTO
+    name: EskaeraSukaldeaEgoeraDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.FakturaDTO
+    name: FakturaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.FakturaErreserbaSortuDTO
+    name: FakturaErreserbaSortuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.FakturaTotalaEguneratuDTO
+    name: FakturaTotalaEguneratuDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.KategoriaDTO
+    name: KategoriaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.LogDTO
+    name: LogDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.LoginDTO
+    name: LoginDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.MahaiaDTO
+    name: MahaiaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.OdooEskaeraDTO
+    name: OdooEskaeraDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+    name: OdooEskaeraLerroDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.OdooMahaiaDTO
+    name: OdooMahaiaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.OdooProduktuaDTO
+    name: OdooProduktuaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.OdooSyncDTO
+    name: OdooSyncDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.OdooZerbitzariaDTO
+    name: OdooZerbitzariaDTO
+    type: Class
+  - uid: ErronkaApi.DTOak.ProduktuaDTO
+    name: ProduktuaDTO
+    type: Class
+- uid: ErronkaApi.Kontrollerrak
+  name: ErronkaApi.Kontrollerrak
+  type: Namespace
+  items:
+  - uid: ErronkaApi.Kontrollerrak.ErabiltzaileaKontrollerra
+    name: ErabiltzaileaKontrollerra
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.ErreserbaKontrollerra
+    name: ErreserbaKontrollerra
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.ErreserbaMahaiakKontrollerra
+    name: ErreserbaMahaiakKontrollerra
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.EskaeraKontrollerra
+    name: EskaeraKontrollerra
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.FakturakKontrollerra
+    name: FakturakKontrollerra
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.KategoriaKontrollerra
+    name: KategoriaKontrollerra
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.KategoriaKontrollerraTesta
+    name: KategoriaKontrollerraTesta
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.LoginKontrollera
+    name: LoginKontrollera
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.MahaiakController
+    name: MahaiakController
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.OdooKontrollerra
+    name: OdooKontrollerra
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+    name: ProduktuKontrollerraTesta
+    type: Class
+  - uid: ErronkaApi.Kontrollerrak.ProduktuakKontrollera
+    name: ProduktuakKontrollera
+    type: Class
+memberLayout: SamePage

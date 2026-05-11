@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Testak
+  commentId: N:ErronkaApi.Testak
+  id: ErronkaApi.Testak
+  children:
+  - ErronkaApi.Testak.ErabiltzaileaKontrollerraTestak
+  - ErronkaApi.Testak.ErreserbaKontrollerraTestak
+  - ErronkaApi.Testak.ErreserbaMahaiakKontrollerraTestak
+  - ErronkaApi.Testak.EskaeraKontrollerraTesta
+  - ErronkaApi.Testak.FakturakKontrollerraTestak
+  - ErronkaApi.Testak.LoginKontrollerTestak
+  - ErronkaApi.Testak.MahaiaKontrollerTestak
+  - ErronkaApi.Testak.OdooKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: ErronkaApi.Testak
+  nameWithType: ErronkaApi.Testak
+  fullName: ErronkaApi.Testak
+  type: Namespace
+  assemblies:
+  - ErronkaApi
+references:
+- uid: ErronkaApi.Testak.ErabiltzaileaKontrollerraTestak
+  commentId: T:ErronkaApi.Testak.ErabiltzaileaKontrollerraTestak
+  href: ErronkaApi.Testak.ErabiltzaileaKontrollerraTestak.html
+  name: ErabiltzaileaKontrollerraTestak
+  nameWithType: ErabiltzaileaKontrollerraTestak
+  fullName: ErronkaApi.Testak.ErabiltzaileaKontrollerraTestak
+- uid: ErronkaApi.Testak.ErreserbaKontrollerraTestak
+  commentId: T:ErronkaApi.Testak.ErreserbaKontrollerraTestak
+  href: ErronkaApi.Testak.ErreserbaKontrollerraTestak.html
+  name: ErreserbaKontrollerraTestak
+  nameWithType: ErreserbaKontrollerraTestak
+  fullName: ErronkaApi.Testak.ErreserbaKontrollerraTestak
+- uid: ErronkaApi.Testak.ErreserbaMahaiakKontrollerraTestak
+  commentId: T:ErronkaApi.Testak.ErreserbaMahaiakKontrollerraTestak
+  href: ErronkaApi.Testak.ErreserbaMahaiakKontrollerraTestak.html
+  name: ErreserbaMahaiakKontrollerraTestak
+  nameWithType: ErreserbaMahaiakKontrollerraTestak
+  fullName: ErronkaApi.Testak.ErreserbaMahaiakKontrollerraTestak
+- uid: ErronkaApi.Testak.EskaeraKontrollerraTesta
+  commentId: T:ErronkaApi.Testak.EskaeraKontrollerraTesta
+  href: ErronkaApi.Testak.EskaeraKontrollerraTesta.html
+  name: EskaeraKontrollerraTesta
+  nameWithType: EskaeraKontrollerraTesta
+  fullName: ErronkaApi.Testak.EskaeraKontrollerraTesta
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak
+  commentId: T:ErronkaApi.Testak.FakturakKontrollerraTestak
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html
+  name: FakturakKontrollerraTestak
+  nameWithType: FakturakKontrollerraTestak
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak
+- uid: ErronkaApi.Testak.LoginKontrollerTestak
+  commentId: T:ErronkaApi.Testak.LoginKontrollerTestak
+  href: ErronkaApi.Testak.LoginKontrollerTestak.html
+  name: LoginKontrollerTestak
+  nameWithType: LoginKontrollerTestak
+  fullName: ErronkaApi.Testak.LoginKontrollerTestak
+- uid: ErronkaApi.Testak.MahaiaKontrollerTestak
+  commentId: T:ErronkaApi.Testak.MahaiaKontrollerTestak
+  href: ErronkaApi.Testak.MahaiaKontrollerTestak.html
+  name: MahaiaKontrollerTestak
+  nameWithType: MahaiaKontrollerTestak
+  fullName: ErronkaApi.Testak.MahaiaKontrollerTestak
+- uid: ErronkaApi.Testak.OdooKontrollerraTestak
+  commentId: T:ErronkaApi.Testak.OdooKontrollerraTestak
+  href: ErronkaApi.Testak.OdooKontrollerraTestak.html
+  name: OdooKontrollerraTestak
+  nameWithType: OdooKontrollerraTestak
+  fullName: ErronkaApi.Testak.OdooKontrollerraTestak

@@ -4,17 +4,33 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ErronkaApi.Kontrollerrak
 {
+    /// <summary>
+    /// Aretoko erabiltzaileak ikusteko eta sortzeko balio du.
+    /// </summary>
     [ApiController]
     [Route("api/erabiltzaileak")]
     public class ErabiltzaileaKontrollerra : ControllerBase
     {
         private readonly ErabiltzaileaRepository _repo;
 
+        /// <summary>
+        /// Erabiltzaileen kontrolatzailea hasieratzen du.
+        /// </summary>
+        /// <param name="repo">Erabiltzaileak kudeatzeko biltegia.</param>
         public ErabiltzaileaKontrollerra(ErabiltzaileaRepository repo)
         {
             _repo = repo;
         }
 
+        /// <summary>
+        /// Saioa hasteko prest dauden erabiltzaileak lortzen ditu.
+        /// </summary>
+        /// <remarks>
+        /// Ruta honek IDa, izena, posta, rola eta txat baimena itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Erabiltzaileen zerrenda edo errore mezua.
+        /// </returns>
         [HttpGet("login")]
         public IActionResult LortuLoginErabiltzaileak()
         {
@@ -47,6 +63,17 @@ namespace ErronkaApi.Kontrollerrak
                 Datuak = datuak
             });
         }
+
+        /// <summary>
+        /// Aretoko erabiltzaile berri bat sortzen du.
+        /// </summary>
+        /// <param name="eskaera">Erabiltzaile berriaren datuak.</param>
+        /// <remarks>
+        /// Ruta honek zerbitzari berri bat sortzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Sortutako erabiltzailea edo errore mezua.
+        /// </returns>
         [HttpPost]
         public IActionResult SortuZerbitzaria([FromBody] ErabiltzaileaSortuDTO eskaera)
         {

@@ -1,0 +1,814 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak
+  commentId: T:ErronkaApi.Testak.FakturakKontrollerraTestak
+  id: FakturakKontrollerraTestak
+  parent: ErronkaApi.Testak
+  children:
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  - ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  langs:
+  - csharp
+  - vb
+  name: FakturakKontrollerraTestak
+  nameWithType: FakturakKontrollerraTestak
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: FakturakKontrollerraTestak
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 10
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: public class FakturakKontrollerraTestak
+    content.vb: Public Class FakturakKontrollerraTestak
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  id: LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuFakturak_ErroreaBadago_500ItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 12
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuFakturak_ErroreaBadago_500ItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuFakturak_ErroreaBadago_500ItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  id: LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuFakturak_DatuakDaudenean_OkItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 34
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuFakturak_DatuakDaudenean_OkItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuFakturak_DatuakDaudenean_OkItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  id: LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 56
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  id: LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 77
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuFaktura_ExistitzenBada_OkItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  id: LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 101
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  id: LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 118
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  id: SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 141
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  id: SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 163
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  id: EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 186
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  id: EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 207
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  id: EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 228
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  commentId: M:ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  id: EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  parent: ErronkaApi.Testak.FakturakKontrollerraTestak
+  langs:
+  - csharp
+  - vb
+  name: EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu()
+  nameWithType: FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu()
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+    path: ErronkaApi/Testak/FakturakKontrollerraTestak.cs
+    startLine: 250
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Testak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu()
+  overload: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: ErronkaApi.Testak
+  commentId: N:ErronkaApi.Testak
+  href: ErronkaApi.html
+  name: ErronkaApi.Testak
+  nameWithType: ErronkaApi.Testak
+  fullName: ErronkaApi.Testak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Testak
+    name: Testak
+    href: ErronkaApi.Testak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Testak
+    name: Testak
+    href: ErronkaApi.Testak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  name: LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_ErroreaBadago_500ItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  name: LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturak_DatuakDaudenean_OkItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  name: LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  name: LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFaktura_ExistitzenBada_OkItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  name: LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_EzBadago_NotFoundItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  name: LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.LortuFakturaErreserbarenArabera_Badago_OkItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  name: SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_ErroreaBadago_BadRequestItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  name: SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.SortuEdoLortuFakturaErreserbatik_DatuZuzenekin_OkItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  name: EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_EzBadaExistitzen_NotFoundItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  name: EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EzabatuFaktura_ExistitzenBada_OkItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  name: EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_ErroreaBadago_BadRequestItzuliBeharDu
+- uid: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu*
+  commentId: Overload:ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  href: ErronkaApi.Testak.FakturakKontrollerraTestak.html#ErronkaApi_Testak_FakturakKontrollerraTestak_EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  name: EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  nameWithType: FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu
+  fullName: ErronkaApi.Testak.FakturakKontrollerraTestak.EguneratuTotala_DatuZuzenekin_OkItzuliBeharDu

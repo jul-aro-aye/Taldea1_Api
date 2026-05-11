@@ -1,20 +1,47 @@
-﻿using ErronkaApi.DTOak;
+using ErronkaApi.DTOak;
 using ErronkaApi.Repositorioak;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ErronkaApi.Kontrollerrak
 {
+    /// <summary>
+    /// Saioa hasteko eta baimenak ikusteko balio du.
+    /// </summary>
+    /// <remarks>
+    /// Kontrolatzaile honek erabiltzailearen oinarrizko datuak bakarrik ematen ditu.
+    /// </remarks>
     [ApiController]
     [Route("api/login")]
     public class LoginKontrollera : ControllerBase
     {
         private readonly ErabiltzaileaRepository _repo;
 
+        /// <summary>
+        /// Login kontrolatzailea hasieratzen du.
+        /// </summary>
+        /// <param name="repo">
+        /// Erabiltzaileak egiaztatzeko biltegia.
+        /// </param>
+        /// <remarks>
+        /// Pasahitza eta erabiltzailea biltegian begiratzen dira.
+        /// </remarks>
         public LoginKontrollera(ErabiltzaileaRepository repo)
         {
             _repo = repo;
         }
 
+        /// <summary>
+        /// Erabiltzailearen datuak egiaztatu eta sartzeko baimena ematen du.
+        /// </summary>
+        /// <param name="dto">
+        /// Erabiltzaile izena eta pasahitza.
+        /// </param>
+        /// <returns>
+        /// Sartzeko baimena (OK) edo errore mezua (Unauthorized).
+        /// </returns>
+        /// <remarks>
+        /// Erantzunak bezeroak behar dituen datuak bakarrik ditu, segurtasunagatik.
+        /// </remarks>
         [HttpPost]
         public IActionResult Login([FromBody] LoginDTO dto)
         {
@@ -47,6 +74,18 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Erabiltzaileak txata erabili dezakeen ikusten du.
+        /// </summary>
+        /// <param name="erabiltzaileId">
+        /// Erabiltzailearen zenbakia.
+        /// </param>
+        /// <returns>
+        /// Txat baimena edo errore mezua.
+        /// </returns>
+        /// <remarks>
+        /// Bai edo ez (true/false) bueltatzen du baimenaren arabera.
+        /// </remarks>
         [HttpGet("{erabiltzaileId}/txat")]
         public IActionResult LortuTxatBaimena(int erabiltzaileId)
         {

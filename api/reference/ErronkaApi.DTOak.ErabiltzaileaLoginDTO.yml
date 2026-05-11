@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  commentId: T:ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  id: ErabiltzaileaLoginDTO
+  parent: ErronkaApi.DTOak
+  children:
+  - ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila
+  - ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea
+  - ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id
+  - ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId
+  - ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena
+  - ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat
+  langs:
+  - csharp
+  - vb
+  name: ErabiltzaileaLoginDTO
+  nameWithType: ErabiltzaileaLoginDTO
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: ErabiltzaileaLoginDTO
+    path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+    startLine: 8
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Saioa hasteko erabiltzailearen informazioa.
+  remarks: DTO honek erabiltzailearen datu garrantzitsuak bakarrik erakusten ditu.
+  example: []
+  syntax:
+    content: public class ErabiltzaileaLoginDTO
+    content.vb: Public Class ErabiltzaileaLoginDTO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id
+  commentId: P:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id
+  id: id
+  parent: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: ErabiltzaileaLoginDTO.id
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: id
+    path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+    startLine: 13
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Erabiltzailearen zenbakia.
+  example: []
+  syntax:
+    content: public int id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property id As Integer
+  overload: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id*
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea
+  commentId: P:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea
+  id: erabiltzailea
+  parent: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  langs:
+  - csharp
+  - vb
+  name: erabiltzailea
+  nameWithType: ErabiltzaileaLoginDTO.erabiltzailea
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: erabiltzailea
+    path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+    startLine: 18
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Erabiltzaile izena.
+  example: []
+  syntax:
+    content: public string erabiltzailea { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property erabiltzailea As String
+  overload: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea*
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila
+  commentId: P:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila
+  id: emaila
+  parent: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  langs:
+  - csharp
+  - vb
+  name: emaila
+  nameWithType: ErabiltzaileaLoginDTO.emaila
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: emaila
+    path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+    startLine: 23
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Posta elektronikoa.
+  example: []
+  syntax:
+    content: public string emaila { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property emaila As String
+  overload: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila*
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId
+  commentId: P:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId
+  id: rolaId
+  parent: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  langs:
+  - csharp
+  - vb
+  name: rolaId
+  nameWithType: ErabiltzaileaLoginDTO.rolaId
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: rolaId
+    path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+    startLine: 28
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Rolaren zenbakia.
+  example: []
+  syntax:
+    content: public int rolaId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property rolaId As Integer
+  overload: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId*
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena
+  commentId: P:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena
+  id: rolaIzena
+  parent: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  langs:
+  - csharp
+  - vb
+  name: rolaIzena
+  nameWithType: ErabiltzaileaLoginDTO.rolaIzena
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: rolaIzena
+    path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+    startLine: 33
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Rolaren izena.
+  example: []
+  syntax:
+    content: public string rolaIzena { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property rolaIzena As String
+  overload: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena*
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat
+  commentId: P:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat
+  id: txat
+  parent: ErronkaApi.DTOak.ErabiltzaileaLoginDTO
+  langs:
+  - csharp
+  - vb
+  name: txat
+  nameWithType: ErabiltzaileaLoginDTO.txat
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: txat
+    path: ErronkaApi/DTOak/ErabiltzaileaLoginDTO.cs
+    startLine: 38
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Txata erabili ahal duen ala ez.
+  example: []
+  syntax:
+    content: public bool txat { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property txat As Boolean
+  overload: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat*
+references:
+- uid: ErronkaApi.DTOak
+  commentId: N:ErronkaApi.DTOak
+  href: ErronkaApi.html
+  name: ErronkaApi.DTOak
+  nameWithType: ErronkaApi.DTOak
+  fullName: ErronkaApi.DTOak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id*
+  commentId: Overload:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id
+  href: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.html#ErronkaApi_DTOak_ErabiltzaileaLoginDTO_id
+  name: id
+  nameWithType: ErabiltzaileaLoginDTO.id
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea*
+  commentId: Overload:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea
+  href: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.html#ErronkaApi_DTOak_ErabiltzaileaLoginDTO_erabiltzailea
+  name: erabiltzailea
+  nameWithType: ErabiltzaileaLoginDTO.erabiltzailea
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.erabiltzailea
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila*
+  commentId: Overload:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila
+  href: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.html#ErronkaApi_DTOak_ErabiltzaileaLoginDTO_emaila
+  name: emaila
+  nameWithType: ErabiltzaileaLoginDTO.emaila
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.emaila
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId*
+  commentId: Overload:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId
+  href: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.html#ErronkaApi_DTOak_ErabiltzaileaLoginDTO_rolaId
+  name: rolaId
+  nameWithType: ErabiltzaileaLoginDTO.rolaId
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaId
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena*
+  commentId: Overload:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena
+  href: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.html#ErronkaApi_DTOak_ErabiltzaileaLoginDTO_rolaIzena
+  name: rolaIzena
+  nameWithType: ErabiltzaileaLoginDTO.rolaIzena
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.rolaIzena
+- uid: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat*
+  commentId: Overload:ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat
+  href: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.html#ErronkaApi_DTOak_ErabiltzaileaLoginDTO_txat
+  name: txat
+  nameWithType: ErabiltzaileaLoginDTO.txat
+  fullName: ErronkaApi.DTOak.ErabiltzaileaLoginDTO.txat
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

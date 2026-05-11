@@ -1,0 +1,4 @@
+- name: API Laburpena
+  href: index.md
+- name: API Xehetasunak (DTOak eta Kontrolatzaileak)
+  href: reference/toc.yml

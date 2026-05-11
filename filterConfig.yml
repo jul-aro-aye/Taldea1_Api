@@ -1,0 +1,7 @@
+apiRules:
+- exclude:
+    uidRegex: ^ErronkaApi\.(Logak|Mapeoak|Middlewareak|Modeloak|NHibernate|Repositorioak|Testak)
+    type: Type
+- include:
+    uidRegex: ^ErronkaApi\.(DTOak|Kontrollerrak)
+    type: Type

@@ -4,17 +4,34 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ErronkaApi.Kontrollerrak
 {
+    /// <summary>
+    /// Erreserbak eta mahaiak lotzeko balio du.
+    /// </summary>
     [ApiController]
     [Route("api/ErreserbaMahaiak")]
     public class ErreserbaMahaiakKontrollerra : ControllerBase
     {
         private readonly ErreserbaRepository _repo;
 
+        /// <summary>
+        /// Erreserba eta mahaien lotura kontrolatzailea hasieratzen du.
+        /// </summary>
+        /// <param name="repo">Loturak kudeatzeko eta egiaztatzeko biltegia.</param>
         public ErreserbaMahaiakKontrollerra(ErreserbaRepository repo)
         {
             _repo = repo;
         }
 
+        /// <summary>
+        /// Mahai bat jartzen dio erreserba bati.
+        /// </summary>
+        /// <param name="dto">Erreserbaren eta mahaiaren zenbakiak.</param>
+        /// <remarks>
+        /// Ruta honek erreserba eta mahaia lotzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Loturaren zenbakia edo errore mezua.
+        /// </returns>
         [HttpPost]
         public IActionResult GehituMahaiErreserbara([FromBody] ErreserbaMahaiDTO dto)
         {
@@ -37,6 +54,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Erreserba batek zein mahai dituen ikusteko.
+        /// </summary>
+        /// <param name="erreserbaId">Bilatu nahi den erreserbaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek erreserba bati lotutako mahaiak itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Mahaiaren zenbakia edo errore mezua.
+        /// </returns>
         [HttpGet("erreserba/{erreserbaId}")]
         public IActionResult LortuMahaiakErreserbarentzat(int erreserbaId)
         {
@@ -59,6 +86,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Erreserba eta mahaien arteko lotura kentzen du.
+        /// </summary>
+        /// <param name="erreserbaId">Lotura kendu nahi zaion erreserbaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek erreserba eta mahaiaren arteko lotura ezabatzen du.
+        /// </remarks>
+        /// <returns>
+        /// Mezua esanez ez dela ezer aldatu.
+        /// </returns>
         [HttpDelete("erreserba/{erreserbaId}")]
         public IActionResult EzabatuMahaiakErreserbatik(int erreserbaId)
         {

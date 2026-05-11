@@ -1,4 +1,8 @@
-- name: Introduction
+- name: Hasiera (README)
+  href: README.md
+- name: Sarrera
   href: introduction.md
-- name: Getting Started
+- name: Hasteko Gida
   href: getting-started.md
+- name: API Azalpena
+  href: api/

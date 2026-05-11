@@ -1,0 +1,728 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  commentId: T:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  id: ProduktuKontrollerraTesta
+  parent: ErronkaApi.Kontrollerrak
+  children:
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  - ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  langs:
+  - csharp
+  - vb
+  name: ProduktuKontrollerraTesta
+  nameWithType: ProduktuKontrollerraTesta
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: ProduktuKontrollerraTesta
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 9
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: public class ProduktuKontrollerraTesta
+    content.vb: Public Class ProduktuKontrollerraTesta
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  id: LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean()
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 14
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  id: LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean()
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 29
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  id: LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 52
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  id: LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean()
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 67
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  id: GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean()
+  nameWithType: ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 93
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  id: GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean()
+  nameWithType: ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 109
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  id: EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  nameWithType: ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 127
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  id: EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean()
+  nameWithType: ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 143
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  id: EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  nameWithType: ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 161
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  commentId: M:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  id: EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  parent: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta
+  langs:
+  - csharp
+  - vb
+  name: EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean()
+  nameWithType: ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean()
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean()
+  type: Method
+  source:
+    remote:
+      path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+    path: ErronkaApi/Testak/ProduktuKontrollerraTesta.cs
+    startLine: 176
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Kontrollerrak
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean()
+  overload: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: ErronkaApi.Kontrollerrak
+  commentId: N:ErronkaApi.Kontrollerrak
+  href: ErronkaApi.html
+  name: ErronkaApi.Kontrollerrak
+  nameWithType: ErronkaApi.Kontrollerrak
+  fullName: ErronkaApi.Kontrollerrak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Kontrollerrak
+    name: Kontrollerrak
+    href: ErronkaApi.Kontrollerrak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Kontrollerrak
+    name: Kontrollerrak
+    href: ErronkaApi.Kontrollerrak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  name: LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_Status500ItzultzenDu_RepoakErroreaEmatenDuenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  name: LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktuak_OkItzultzenDu_ProduktuakOndoLortzenDirenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  name: LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  name: LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  nameWithType: ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.LortuProduktua_OkItzultzenDu_ProduktuaExistitzenDenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  name: GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  nameWithType: ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_BadRequestItzultzenDu_DatuakBaliozkoakEzDirenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  name: GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  nameWithType: ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.GehituProduktua_OkItzultzenDu_ProduktuaOndoGehitzenDenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  name: EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  nameWithType: ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  name: EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  nameWithType: ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EguneratuProduktua_OkItzultzenDu_ProduktuaOndoEguneratzenDenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  name: EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  nameWithType: ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_NotFoundItzultzenDu_ProduktuaExistitzenEzDenean
+- uid: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean*
+  commentId: Overload:ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  href: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.html#ErronkaApi_Kontrollerrak_ProduktuKontrollerraTesta_EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  name: EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  nameWithType: ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean
+  fullName: ErronkaApi.Kontrollerrak.ProduktuKontrollerraTesta.EzabatuProduktua_OkItzultzenDu_ProduktuaOndoEzabatzenDenean

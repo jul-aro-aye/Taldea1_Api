@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Repositorioak
+  commentId: N:ErronkaApi.Repositorioak
+  id: ErronkaApi.Repositorioak
+  children:
+  - ErronkaApi.Repositorioak.ErabiltzaileaRepository
+  - ErronkaApi.Repositorioak.ErreserbaRepository
+  - ErronkaApi.Repositorioak.EskaeraRepository
+  - ErronkaApi.Repositorioak.FakturaRepository
+  - ErronkaApi.Repositorioak.KategoriaRepository
+  - ErronkaApi.Repositorioak.MahaiaRepository
+  - ErronkaApi.Repositorioak.OdooRepository
+  - ErronkaApi.Repositorioak.ProduktuaRepository
+  langs:
+  - csharp
+  - vb
+  name: ErronkaApi.Repositorioak
+  nameWithType: ErronkaApi.Repositorioak
+  fullName: ErronkaApi.Repositorioak
+  type: Namespace
+  assemblies:
+  - ErronkaApi
+references:
+- uid: ErronkaApi.Repositorioak.ErabiltzaileaRepository
+  commentId: T:ErronkaApi.Repositorioak.ErabiltzaileaRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.ErabiltzaileaRepository.html
+  name: ErabiltzaileaRepository
+  nameWithType: ErabiltzaileaRepository
+  fullName: ErronkaApi.Repositorioak.ErabiltzaileaRepository
+- uid: ErronkaApi.Repositorioak.ErreserbaRepository
+  commentId: T:ErronkaApi.Repositorioak.ErreserbaRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.ErreserbaRepository.html
+  name: ErreserbaRepository
+  nameWithType: ErreserbaRepository
+  fullName: ErronkaApi.Repositorioak.ErreserbaRepository
+- uid: ErronkaApi.Repositorioak.EskaeraRepository
+  commentId: T:ErronkaApi.Repositorioak.EskaeraRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.EskaeraRepository.html
+  name: EskaeraRepository
+  nameWithType: EskaeraRepository
+  fullName: ErronkaApi.Repositorioak.EskaeraRepository
+- uid: ErronkaApi.Repositorioak.FakturaRepository
+  commentId: T:ErronkaApi.Repositorioak.FakturaRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.FakturaRepository.html
+  name: FakturaRepository
+  nameWithType: FakturaRepository
+  fullName: ErronkaApi.Repositorioak.FakturaRepository
+- uid: ErronkaApi.Repositorioak.KategoriaRepository
+  commentId: T:ErronkaApi.Repositorioak.KategoriaRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.KategoriaRepository.html
+  name: KategoriaRepository
+  nameWithType: KategoriaRepository
+  fullName: ErronkaApi.Repositorioak.KategoriaRepository
+- uid: ErronkaApi.Repositorioak.MahaiaRepository
+  commentId: T:ErronkaApi.Repositorioak.MahaiaRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.MahaiaRepository.html
+  name: MahaiaRepository
+  nameWithType: MahaiaRepository
+  fullName: ErronkaApi.Repositorioak.MahaiaRepository
+- uid: ErronkaApi.Repositorioak.OdooRepository
+  commentId: T:ErronkaApi.Repositorioak.OdooRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.OdooRepository.html
+  name: OdooRepository
+  nameWithType: OdooRepository
+  fullName: ErronkaApi.Repositorioak.OdooRepository
+- uid: ErronkaApi.Repositorioak.ProduktuaRepository
+  commentId: T:ErronkaApi.Repositorioak.ProduktuaRepository
+  parent: ErronkaApi.Repositorioak
+  href: ErronkaApi.Repositorioak.ProduktuaRepository.html
+  name: ProduktuaRepository
+  nameWithType: ProduktuaRepository
+  fullName: ErronkaApi.Repositorioak.ProduktuaRepository
+- uid: ErronkaApi.Repositorioak
+  commentId: N:ErronkaApi.Repositorioak
+  href: ErronkaApi.html
+  name: ErronkaApi.Repositorioak
+  nameWithType: ErronkaApi.Repositorioak
+  fullName: ErronkaApi.Repositorioak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Repositorioak
+    name: Repositorioak
+    href: ErronkaApi.Repositorioak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Repositorioak
+    name: Repositorioak
+    href: ErronkaApi.Repositorioak.html

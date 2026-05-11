@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  commentId: T:ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  id: OdooEskaeraLerroDTO
+  parent: ErronkaApi.DTOak
+  children:
+  - ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira
+  - ErronkaApi.DTOak.OdooEskaeraLerroDTO.id
+  - ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea
+  - ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa
+  - ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId
+  - ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena
+  langs:
+  - csharp
+  - vb
+  name: OdooEskaeraLerroDTO
+  nameWithType: OdooEskaeraLerroDTO
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/DTOak/OdooSyncDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: OdooEskaeraLerroDTO
+    path: ErronkaApi/DTOak/OdooSyncDTO.cs
+    startLine: 208
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Odoo-rako egokitutako eskari-lerroa.
+  remarks: Eskari bateko produktu baten informazioa Odoo-rako.
+  example: []
+  syntax:
+    content: public class OdooEskaeraLerroDTO
+    content.vb: Public Class OdooEskaeraLerroDTO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.id
+  commentId: P:ErronkaApi.DTOak.OdooEskaeraLerroDTO.id
+  id: id
+  parent: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: OdooEskaeraLerroDTO.id
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.id
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/OdooSyncDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: id
+    path: ErronkaApi/DTOak/OdooSyncDTO.cs
+    startLine: 213
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Eskari-lerroaren zenbakia.
+  example: []
+  syntax:
+    content: public int id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property id As Integer
+  overload: ErronkaApi.DTOak.OdooEskaeraLerroDTO.id*
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId
+  commentId: P:ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId
+  id: produktuaId
+  parent: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  langs:
+  - csharp
+  - vb
+  name: produktuaId
+  nameWithType: OdooEskaeraLerroDTO.produktuaId
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/OdooSyncDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: produktuaId
+    path: ErronkaApi/DTOak/OdooSyncDTO.cs
+    startLine: 218
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Produktuaren zenbakia.
+  example: []
+  syntax:
+    content: public int produktuaId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property produktuaId As Integer
+  overload: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId*
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena
+  commentId: P:ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena
+  id: produktuaIzena
+  parent: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  langs:
+  - csharp
+  - vb
+  name: produktuaIzena
+  nameWithType: OdooEskaeraLerroDTO.produktuaIzena
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/OdooSyncDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: produktuaIzena
+    path: ErronkaApi/DTOak/OdooSyncDTO.cs
+    startLine: 223
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Produktuaren izena.
+  example: []
+  syntax:
+    content: public string produktuaIzena { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property produktuaIzena As String
+  overload: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena*
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea
+  commentId: P:ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea
+  id: kantitatea
+  parent: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  langs:
+  - csharp
+  - vb
+  name: kantitatea
+  nameWithType: OdooEskaeraLerroDTO.kantitatea
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/OdooSyncDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: kantitatea
+    path: ErronkaApi/DTOak/OdooSyncDTO.cs
+    startLine: 228
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Zenbat produktu dauden.
+  example: []
+  syntax:
+    content: public int kantitatea { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property kantitatea As Integer
+  overload: ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea*
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa
+  commentId: P:ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa
+  id: prezioUnitarioa
+  parent: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  langs:
+  - csharp
+  - vb
+  name: prezioUnitarioa
+  nameWithType: OdooEskaeraLerroDTO.prezioUnitarioa
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/OdooSyncDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: prezioUnitarioa
+    path: ErronkaApi/DTOak/OdooSyncDTO.cs
+    startLine: 233
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Produktu baten prezioa.
+  example: []
+  syntax:
+    content: public decimal prezioUnitarioa { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property prezioUnitarioa As Decimal
+  overload: ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa*
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira
+  commentId: P:ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira
+  id: guztira
+  parent: ErronkaApi.DTOak.OdooEskaeraLerroDTO
+  langs:
+  - csharp
+  - vb
+  name: guztira
+  nameWithType: OdooEskaeraLerroDTO.guztira
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/OdooSyncDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: guztira
+    path: ErronkaApi/DTOak/OdooSyncDTO.cs
+    startLine: 238
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Guztira balio duena.
+  example: []
+  syntax:
+    content: public decimal guztira { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property guztira As Decimal
+  overload: ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira*
+references:
+- uid: ErronkaApi.DTOak
+  commentId: N:ErronkaApi.DTOak
+  href: ErronkaApi.html
+  name: ErronkaApi.DTOak
+  nameWithType: ErronkaApi.DTOak
+  fullName: ErronkaApi.DTOak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.id*
+  commentId: Overload:ErronkaApi.DTOak.OdooEskaeraLerroDTO.id
+  href: ErronkaApi.DTOak.OdooEskaeraLerroDTO.html#ErronkaApi_DTOak_OdooEskaeraLerroDTO_id
+  name: id
+  nameWithType: OdooEskaeraLerroDTO.id
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId*
+  commentId: Overload:ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId
+  href: ErronkaApi.DTOak.OdooEskaeraLerroDTO.html#ErronkaApi_DTOak_OdooEskaeraLerroDTO_produktuaId
+  name: produktuaId
+  nameWithType: OdooEskaeraLerroDTO.produktuaId
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaId
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena*
+  commentId: Overload:ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena
+  href: ErronkaApi.DTOak.OdooEskaeraLerroDTO.html#ErronkaApi_DTOak_OdooEskaeraLerroDTO_produktuaIzena
+  name: produktuaIzena
+  nameWithType: OdooEskaeraLerroDTO.produktuaIzena
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.produktuaIzena
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea*
+  commentId: Overload:ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea
+  href: ErronkaApi.DTOak.OdooEskaeraLerroDTO.html#ErronkaApi_DTOak_OdooEskaeraLerroDTO_kantitatea
+  name: kantitatea
+  nameWithType: OdooEskaeraLerroDTO.kantitatea
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.kantitatea
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa*
+  commentId: Overload:ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa
+  href: ErronkaApi.DTOak.OdooEskaeraLerroDTO.html#ErronkaApi_DTOak_OdooEskaeraLerroDTO_prezioUnitarioa
+  name: prezioUnitarioa
+  nameWithType: OdooEskaeraLerroDTO.prezioUnitarioa
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.prezioUnitarioa
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira*
+  commentId: Overload:ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira
+  href: ErronkaApi.DTOak.OdooEskaeraLerroDTO.html#ErronkaApi_DTOak_OdooEskaeraLerroDTO_guztira
+  name: guztira
+  nameWithType: OdooEskaeraLerroDTO.guztira
+  fullName: ErronkaApi.DTOak.OdooEskaeraLerroDTO.guztira

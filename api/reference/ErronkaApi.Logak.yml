@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Logak
+  commentId: N:ErronkaApi.Logak
+  id: ErronkaApi.Logak
+  children:
+  - ErronkaApi.Logak.Log
+  - ErronkaApi.Logak.LogAnder
+  langs:
+  - csharp
+  - vb
+  name: ErronkaApi.Logak
+  nameWithType: ErronkaApi.Logak
+  fullName: ErronkaApi.Logak
+  type: Namespace
+  assemblies:
+  - ErronkaApi
+references:
+- uid: ErronkaApi.Logak.Log
+  commentId: T:ErronkaApi.Logak.Log
+  href: ErronkaApi.Logak.Log.html
+  name: Log
+  nameWithType: Log
+  fullName: ErronkaApi.Logak.Log
+- uid: ErronkaApi.Logak.LogAnder
+  commentId: T:ErronkaApi.Logak.LogAnder
+  parent: ErronkaApi.Logak
+  href: ErronkaApi.Logak.LogAnder.html
+  name: LogAnder
+  nameWithType: LogAnder
+  fullName: ErronkaApi.Logak.LogAnder
+- uid: ErronkaApi.Logak
+  commentId: N:ErronkaApi.Logak
+  href: ErronkaApi.html
+  name: ErronkaApi.Logak
+  nameWithType: ErronkaApi.Logak
+  fullName: ErronkaApi.Logak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Logak
+    name: Logak
+    href: ErronkaApi.Logak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Logak
+    name: Logak
+    href: ErronkaApi.Logak.html

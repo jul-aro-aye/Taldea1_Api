@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.DTOak.EskaeraDTO
+  commentId: T:ErronkaApi.DTOak.EskaeraDTO
+  id: EskaeraDTO
+  parent: ErronkaApi.DTOak
+  children:
+  - ErronkaApi.DTOak.EskaeraDTO.Data
+  - ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea
+  - ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia
+  - ErronkaApi.DTOak.EskaeraDTO.Egoera
+  - ErronkaApi.DTOak.EskaeraDTO.Id
+  - ErronkaApi.DTOak.EskaeraDTO.Izena
+  - ErronkaApi.DTOak.EskaeraDTO.Komensalak
+  - ErronkaApi.DTOak.EskaeraDTO.MahaiaId
+  - ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera
+  - ErronkaApi.DTOak.EskaeraDTO.Txanda
+  langs:
+  - csharp
+  - vb
+  name: EskaeraDTO
+  nameWithType: EskaeraDTO
+  fullName: ErronkaApi.DTOak.EskaeraDTO
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EskaeraDTO
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 8
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Eskari baten informazio orokorra.
+  remarks: Eskariak zerrendan ikusteko erabiltzen da.
+  example: []
+  syntax:
+    content: public class EskaeraDTO
+    content.vb: Public Class EskaeraDTO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.DTOak.EskaeraDTO.Id
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.Id
+  id: Id
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: EskaeraDTO.Id
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Id
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Id
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 13
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Eskariaren zenbakia.
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: ErronkaApi.DTOak.EskaeraDTO.Id*
+- uid: ErronkaApi.DTOak.EskaeraDTO.Izena
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.Izena
+  id: Izena
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: Izena
+  nameWithType: EskaeraDTO.Izena
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Izena
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Izena
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 18
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Eskariaren izena.
+  example: []
+  syntax:
+    content: public string Izena { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Izena As String
+  overload: ErronkaApi.DTOak.EskaeraDTO.Izena*
+- uid: ErronkaApi.DTOak.EskaeraDTO.MahaiaId
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.MahaiaId
+  id: MahaiaId
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: MahaiaId
+  nameWithType: EskaeraDTO.MahaiaId
+  fullName: ErronkaApi.DTOak.EskaeraDTO.MahaiaId
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: MahaiaId
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 23
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Mahaiaren zenbakia.
+  example: []
+  syntax:
+    content: public int MahaiaId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MahaiaId As Integer
+  overload: ErronkaApi.DTOak.EskaeraDTO.MahaiaId*
+- uid: ErronkaApi.DTOak.EskaeraDTO.Komensalak
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.Komensalak
+  id: Komensalak
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: Komensalak
+  nameWithType: EskaeraDTO.Komensalak
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Komensalak
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Komensalak
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 28
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Mahaian dauden pertsona kopurua.
+  example: []
+  syntax:
+    content: public int Komensalak { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Komensalak As Integer
+  overload: ErronkaApi.DTOak.EskaeraDTO.Komensalak*
+- uid: ErronkaApi.DTOak.EskaeraDTO.Egoera
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.Egoera
+  id: Egoera
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: Egoera
+  nameWithType: EskaeraDTO.Egoera
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Egoera
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Egoera
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 33
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Eskariaren egoera orokorra.
+  example: []
+  syntax:
+    content: public string Egoera { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Egoera As String
+  overload: ErronkaApi.DTOak.EskaeraDTO.Egoera*
+- uid: ErronkaApi.DTOak.EskaeraDTO.Data
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.Data
+  id: Data
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: EskaeraDTO.Data
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Data
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Data
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 38
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Eskariaren eguna.
+  example: []
+  syntax:
+    content: public string Data { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Data As String
+  overload: ErronkaApi.DTOak.EskaeraDTO.Data*
+- uid: ErronkaApi.DTOak.EskaeraDTO.Txanda
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.Txanda
+  id: Txanda
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: Txanda
+  nameWithType: EskaeraDTO.Txanda
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Txanda
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Txanda
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 43
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Bazkaria edo afaria den.
+  example: []
+  syntax:
+    content: public string Txanda { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Txanda As String
+  overload: ErronkaApi.DTOak.EskaeraDTO.Txanda*
+- uid: ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera
+  id: SukaldeaEgoera
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: SukaldeaEgoera
+  nameWithType: EskaeraDTO.SukaldeaEgoera
+  fullName: ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: SukaldeaEgoera
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 48
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Sukaldeko egoera.
+  example: []
+  syntax:
+    content: public string SukaldeaEgoera { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SukaldeaEgoera As String
+  overload: ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera*
+- uid: ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea
+  id: DeskontuKodea
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: DeskontuKodea
+  nameWithType: EskaeraDTO.DeskontuKodea
+  fullName: ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: DeskontuKodea
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 53
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Erabilitako deskontu kodea.
+  example: []
+  syntax:
+    content: public string? DeskontuKodea { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeskontuKodea As String
+  overload: ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea*
+- uid: ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia
+  commentId: P:ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia
+  id: DeskontuPortzentaia
+  parent: ErronkaApi.DTOak.EskaeraDTO
+  langs:
+  - csharp
+  - vb
+  name: DeskontuPortzentaia
+  nameWithType: EskaeraDTO.DeskontuPortzentaia
+  fullName: ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/DTOak/EskaeraDTO.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: DeskontuPortzentaia
+    path: ErronkaApi/DTOak/EskaeraDTO.cs
+    startLine: 58
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.DTOak
+  summary: Deskontuaren ehunekoa.
+  example: []
+  syntax:
+    content: public decimal DeskontuPortzentaia { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property DeskontuPortzentaia As Decimal
+  overload: ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia*
+references:
+- uid: ErronkaApi.DTOak
+  commentId: N:ErronkaApi.DTOak
+  href: ErronkaApi.html
+  name: ErronkaApi.DTOak
+  nameWithType: ErronkaApi.DTOak
+  fullName: ErronkaApi.DTOak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.DTOak
+    name: DTOak
+    href: ErronkaApi.DTOak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.DTOak.EskaeraDTO.Id*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.Id
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_Id
+  name: Id
+  nameWithType: EskaeraDTO.Id
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ErronkaApi.DTOak.EskaeraDTO.Izena*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.Izena
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_Izena
+  name: Izena
+  nameWithType: EskaeraDTO.Izena
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Izena
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ErronkaApi.DTOak.EskaeraDTO.MahaiaId*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.MahaiaId
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_MahaiaId
+  name: MahaiaId
+  nameWithType: EskaeraDTO.MahaiaId
+  fullName: ErronkaApi.DTOak.EskaeraDTO.MahaiaId
+- uid: ErronkaApi.DTOak.EskaeraDTO.Komensalak*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.Komensalak
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_Komensalak
+  name: Komensalak
+  nameWithType: EskaeraDTO.Komensalak
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Komensalak
+- uid: ErronkaApi.DTOak.EskaeraDTO.Egoera*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.Egoera
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_Egoera
+  name: Egoera
+  nameWithType: EskaeraDTO.Egoera
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Egoera
+- uid: ErronkaApi.DTOak.EskaeraDTO.Data*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.Data
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_Data
+  name: Data
+  nameWithType: EskaeraDTO.Data
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Data
+- uid: ErronkaApi.DTOak.EskaeraDTO.Txanda*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.Txanda
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_Txanda
+  name: Txanda
+  nameWithType: EskaeraDTO.Txanda
+  fullName: ErronkaApi.DTOak.EskaeraDTO.Txanda
+- uid: ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_SukaldeaEgoera
+  name: SukaldeaEgoera
+  nameWithType: EskaeraDTO.SukaldeaEgoera
+  fullName: ErronkaApi.DTOak.EskaeraDTO.SukaldeaEgoera
+- uid: ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_DeskontuKodea
+  name: DeskontuKodea
+  nameWithType: EskaeraDTO.DeskontuKodea
+  fullName: ErronkaApi.DTOak.EskaeraDTO.DeskontuKodea
+- uid: ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia*
+  commentId: Overload:ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia
+  href: ErronkaApi.DTOak.EskaeraDTO.html#ErronkaApi_DTOak_EskaeraDTO_DeskontuPortzentaia
+  name: DeskontuPortzentaia
+  nameWithType: EskaeraDTO.DeskontuPortzentaia
+  fullName: ErronkaApi.DTOak.EskaeraDTO.DeskontuPortzentaia
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal

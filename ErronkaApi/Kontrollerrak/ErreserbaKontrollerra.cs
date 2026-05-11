@@ -4,17 +4,33 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ErronkaApi.Kontrollerrak
 {
+    /// <summary>
+    /// Mahaien erreserbak kudeatzeko balio du.
+    /// </summary>
     [ApiController]
     [Route("api/Erreserbak")]
     public class ErreserbaKontrollerra : ControllerBase
     {
         private readonly ErreserbaRepository _repo;
 
+        /// <summary>
+        /// Erreserben kontrolatzailea hasieratzen du.
+        /// </summary>
+        /// <param name="repo">Erreserbak egiteko eta egiaztatzeko biltegia.</param>
         public ErreserbaKontrollerra(ErreserbaRepository repo)
         {
             _repo = repo;
         }
 
+        /// <summary>
+        /// Gordeta dauden erreserba guztiak lortzen ditu.
+        /// </summary>
+        /// <remarks>
+        /// Ruta honek erreserba guztiak itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Erreserba guztien zerrenda.
+        /// </returns>
         [HttpGet]
         public IActionResult LortuErreserbak()
         {
@@ -31,6 +47,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Data jakin bateko erreserbak lortzen ditu.
+        /// </summary>
+        /// <param name="data">Bilatu nahi den eguna.</param>
+        /// <remarks>
+        /// Ruta honek data jakin bateko erreserbak itzultzen ditu.
+        /// </remarks>
+        /// <returns>
+        /// Data horretako erreserben zerrenda.
+        /// </returns>
         [HttpGet("data/{data}")]
         public IActionResult LortuErreserbakData(string data)
         {
@@ -56,6 +82,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Erreserba berri bat egiten du.
+        /// </summary>
+        /// <param name="dto">Erreserba egiteko datuak.</param>
+        /// <remarks>
+        /// Ruta honek erreserba berria sortzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Sortutako erreserba edo errore mezua.
+        /// </returns>
         [HttpPost]
         public IActionResult SortuErreserba([FromBody] ErreserbaDTO dto)
         {
@@ -78,6 +114,17 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Gordeta dagoen erreserba bat aldatzen du.
+        /// </summary>
+        /// <param name="id">Aldatu nahi den erreserbaren ID-a.</param>
+        /// <param name="dto">Erreserba berriaren datuak.</param>
+        /// <remarks>
+        /// Ruta honek erreserba eguneratzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Aldatutako erreserba edo errore mezua.
+        /// </returns>
         [HttpPut("{id}")]
         public IActionResult EguneratuErreserba(int id, [FromBody] ErreserbaDTO dto)
         {
@@ -100,6 +147,16 @@ namespace ErronkaApi.Kontrollerrak
             });
         }
 
+        /// <summary>
+        /// Erreserba bat ezabatzen du.
+        /// </summary>
+        /// <param name="id">Ezabatu nahi den erreserbaren ID-a.</param>
+        /// <remarks>
+        /// Ruta honek erreserba ezabatzen du datu-basean.
+        /// </remarks>
+        /// <returns>
+        /// Mezua erreserba ezabatu dela esanez.
+        /// </returns>
         [HttpDelete("{id}")]
         public IActionResult EzabatuErreserba(int id)
         {

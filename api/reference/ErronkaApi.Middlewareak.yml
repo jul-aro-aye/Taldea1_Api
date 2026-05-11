@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Middlewareak
+  commentId: N:ErronkaApi.Middlewareak
+  id: ErronkaApi.Middlewareak
+  children:
+  - ErronkaApi.Middlewareak.TpvEkintzaLogMiddleware
+  langs:
+  - csharp
+  - vb
+  name: ErronkaApi.Middlewareak
+  nameWithType: ErronkaApi.Middlewareak
+  fullName: ErronkaApi.Middlewareak
+  type: Namespace
+  assemblies:
+  - ErronkaApi
+references:
+- uid: ErronkaApi.Middlewareak.TpvEkintzaLogMiddleware
+  commentId: T:ErronkaApi.Middlewareak.TpvEkintzaLogMiddleware
+  href: ErronkaApi.Middlewareak.TpvEkintzaLogMiddleware.html
+  name: TpvEkintzaLogMiddleware
+  nameWithType: TpvEkintzaLogMiddleware
+  fullName: ErronkaApi.Middlewareak.TpvEkintzaLogMiddleware

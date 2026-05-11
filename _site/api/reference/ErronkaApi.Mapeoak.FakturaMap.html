@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FakturaMap | ApiErronka2 Dokumentazioa </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FakturaMap | ApiErronka2 Dokumentazioa ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jul-aro-aye/Taldea1_Api/new/master/apiSpec/new?filename=ErronkaApi_Mapeoak_FakturaMap.md&amp;value=---%0Auid%3A%20ErronkaApi.Mapeoak.FakturaMap%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ErronkaApi.Mapeoak.FakturaMap">
+
+
+
+  <h1 id="ErronkaApi_Mapeoak_FakturaMap" data-uid="ErronkaApi.Mapeoak.FakturaMap" class="text-break">
+Class FakturaMap  <a class="header-action link-secondary" title="View source" href="https://github.com/jul-aro-aye/Taldea1_Api/blob/master/ErronkaApi/Mapeoak/FakturaMap.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ErronkaApi.html">ErronkaApi</a>.<a class="xref" href="ErronkaApi.Mapeoak.html">Mapeoak</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ErronkaApi.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FakturaMap : ClassMap&lt;Faktura&gt;, IMappingProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase</a>&lt;<a class="xref" href="ErronkaApi.Modeloak.Faktura.html">Faktura</a>&gt;</div>
+      <div><a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap</a>&lt;<a class="xref" href="ErronkaApi.Modeloak.Faktura.html">Faktura</a>&gt;</div>
+      <div><span class="xref">FakturaMap</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/PersistenceModel.cs">IMappingProvider</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Id(Expression&lt;Func&lt;Faktura, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Id(Expression&lt;Func&lt;Faktura, object&gt;&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Id()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Id&lt;TId&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Id&lt;TId&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.NaturalId()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.CompositeId()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.CompositeId&lt;TId&gt;(Expression&lt;Func&lt;Faktura, TId&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Version(Expression&lt;Func&lt;Faktura, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.DiscriminateSubClassesOnColumn&lt;TDiscriminator&gt;(string, TDiscriminator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.DiscriminateSubClassesOnColumn&lt;TDiscriminator&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.DiscriminateSubClassesOnColumn(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.UseUnionSubclassForInheritanceMapping()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.JoinedSubClass&lt;TSubclass&gt;(string, Action&lt;JoinedSubClassPart&lt;TSubclass&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Schema(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Table(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.LazyLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Join(string, Action&lt;JoinPart&lt;Faktura&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.ImportType&lt;TImport&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.ReadOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.DynamicUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.DynamicInsert()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.BatchSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.CheckConstraint(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Persister&lt;TPersister&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Persister(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Proxy&lt;TProxy&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Proxy(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Proxy(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.SelectBeforeUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Where(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Subselect(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.EntityName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.ApplyFilter(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.ApplyFilter(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.ApplyFilter&lt;TFilter&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.ApplyFilter&lt;TFilter&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Tuplizer(TuplizerMode, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Cache</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.HibernateMapping</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Not</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.OptimisticLock</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.Polymorphism</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClassMap.cs">ClassMap&lt;Faktura&gt;.SchemaAction</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.Map(Expression&lt;Func&lt;Faktura, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.Map(Expression&lt;Func&lt;Faktura, object&gt;&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.References&lt;TOther&gt;(Expression&lt;Func&lt;Faktura, TOther&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.References&lt;TOther&gt;(Expression&lt;Func&lt;Faktura, TOther&gt;&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.References&lt;TOther&gt;(Expression&lt;Func&lt;Faktura, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.References&lt;TOther&gt;(Expression&lt;Func&lt;Faktura, object&gt;&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.ReferencesAny&lt;TOther&gt;(Expression&lt;Func&lt;Faktura, TOther&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.HasOne&lt;TOther&gt;(Expression&lt;Func&lt;Faktura, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.HasOne&lt;TOther&gt;(Expression&lt;Func&lt;Faktura, TOther&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.DynamicComponent(Expression&lt;Func&lt;Faktura, IDictionary&gt;&gt;, Action&lt;DynamicComponentPart&lt;IDictionary&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.Component&lt;TComponent&gt;(Expression&lt;Func&lt;Faktura, TComponent&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.Component&lt;TComponent&gt;(Expression&lt;Func&lt;Faktura, TComponent&gt;&gt;, Action&lt;ComponentPart&lt;TComponent&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.Component&lt;TComponent&gt;(Expression&lt;Func&lt;Faktura, object&gt;&gt;, Action&lt;ComponentPart&lt;TComponent&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.Component(IComponentMappingProvider)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.HasMany&lt;TChild&gt;(Expression&lt;Func&lt;Faktura, IEnumerable&lt;TChild&gt;&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.HasMany&lt;TKey, TChild&gt;(Expression&lt;Func&lt;Faktura, IDictionary&lt;TKey, TChild&gt;&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.HasMany&lt;TChild&gt;(Expression&lt;Func&lt;Faktura, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.HasManyToMany&lt;TChild&gt;(Expression&lt;Func&lt;Faktura, IEnumerable&lt;TChild&gt;&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.HasManyToMany&lt;TChild&gt;(Expression&lt;Func&lt;Faktura, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.SqlInsert(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.SqlUpdate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.SqlDelete(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.SqlDeleteAll(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://github.com/nhibernate/fluent-nhibernate/blob/cb6586309753da07488fba6a228fb39f9dfa9707/src/FluentNHibernate/Mapping/ClasslikeMapBase.cs">ClasslikeMapBase&lt;Faktura&gt;.StoredProcedure(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ErronkaApi_Mapeoak_FakturaMap__ctor_" data-uid="ErronkaApi.Mapeoak.FakturaMap.#ctor*"></a>
+
+  <h3 id="ErronkaApi_Mapeoak_FakturaMap__ctor" data-uid="ErronkaApi.Mapeoak.FakturaMap.#ctor">
+  FakturaMap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jul-aro-aye/Taldea1_Api/blob/master/ErronkaApi/Mapeoak/FakturaMap.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FakturaMap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jul-aro-aye/Taldea1_Api/blob/master/ErronkaApi/Mapeoak/FakturaMap.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          ApiErronka2-ren dokumentazioa (DocFX bidez egina)
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

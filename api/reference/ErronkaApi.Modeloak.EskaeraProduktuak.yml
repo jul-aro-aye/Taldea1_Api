@@ -1,0 +1,597 @@
+### YamlMime:ManagedReference
+items:
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak
+  commentId: T:ErronkaApi.Modeloak.EskaeraProduktuak
+  id: EskaeraProduktuak
+  parent: ErronkaApi.Modeloak
+  children:
+  - ErronkaApi.Modeloak.EskaeraProduktuak.Egoera
+  - ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera
+  - ErronkaApi.Modeloak.EskaeraProduktuak.Guztira
+  - ErronkaApi.Modeloak.EskaeraProduktuak.Id
+  - ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea
+  - ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa
+  - ErronkaApi.Modeloak.EskaeraProduktuak.Produktua
+  langs:
+  - csharp
+  - vb
+  name: EskaeraProduktuak
+  nameWithType: EskaeraProduktuak
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak
+  type: Class
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: EskaeraProduktuak
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 4
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public class EskaeraProduktuak
+    content.vb: Public Class EskaeraProduktuak
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Id
+  commentId: P:ErronkaApi.Modeloak.EskaeraProduktuak.Id
+  id: Id
+  parent: ErronkaApi.Modeloak.EskaeraProduktuak
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: EskaeraProduktuak.Id
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Id
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Id
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 6
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public virtual int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property Id As Integer
+  overload: ErronkaApi.Modeloak.EskaeraProduktuak.Id*
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera
+  commentId: P:ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera
+  id: Eskaera
+  parent: ErronkaApi.Modeloak.EskaeraProduktuak
+  langs:
+  - csharp
+  - vb
+  name: Eskaera
+  nameWithType: EskaeraProduktuak.Eskaera
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Eskaera
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 8
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public virtual Eskaera Eskaera { get; set; }
+    parameters: []
+    return:
+      type: ErronkaApi.Modeloak.Eskaera
+    content.vb: Public Overridable Property Eskaera As Eskaera
+  overload: ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera*
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Produktua
+  commentId: P:ErronkaApi.Modeloak.EskaeraProduktuak.Produktua
+  id: Produktua
+  parent: ErronkaApi.Modeloak.EskaeraProduktuak
+  langs:
+  - csharp
+  - vb
+  name: Produktua
+  nameWithType: EskaeraProduktuak.Produktua
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Produktua
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Produktua
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 10
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public virtual Produktua Produktua { get; set; }
+    parameters: []
+    return:
+      type: ErronkaApi.Modeloak.Produktua
+    content.vb: Public Overridable Property Produktua As Produktua
+  overload: ErronkaApi.Modeloak.EskaeraProduktuak.Produktua*
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea
+  commentId: P:ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea
+  id: Kantitatea
+  parent: ErronkaApi.Modeloak.EskaeraProduktuak
+  langs:
+  - csharp
+  - vb
+  name: Kantitatea
+  nameWithType: EskaeraProduktuak.Kantitatea
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Kantitatea
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 12
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public virtual int Kantitatea { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Property Kantitatea As Integer
+  overload: ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea*
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Egoera
+  commentId: P:ErronkaApi.Modeloak.EskaeraProduktuak.Egoera
+  id: Egoera
+  parent: ErronkaApi.Modeloak.EskaeraProduktuak
+  langs:
+  - csharp
+  - vb
+  name: Egoera
+  nameWithType: EskaeraProduktuak.Egoera
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Egoera
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Egoera
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 13
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public virtual string Egoera { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Egoera As String
+  overload: ErronkaApi.Modeloak.EskaeraProduktuak.Egoera*
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa
+  commentId: P:ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa
+  id: PrezioUnitarioa
+  parent: ErronkaApi.Modeloak.EskaeraProduktuak
+  langs:
+  - csharp
+  - vb
+  name: PrezioUnitarioa
+  nameWithType: EskaeraProduktuak.PrezioUnitarioa
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: PrezioUnitarioa
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 15
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public virtual decimal PrezioUnitarioa { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Overridable Property PrezioUnitarioa As Decimal
+  overload: ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa*
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Guztira
+  commentId: P:ErronkaApi.Modeloak.EskaeraProduktuak.Guztira
+  id: Guztira
+  parent: ErronkaApi.Modeloak.EskaeraProduktuak
+  langs:
+  - csharp
+  - vb
+  name: Guztira
+  nameWithType: EskaeraProduktuak.Guztira
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Guztira
+  type: Property
+  source:
+    remote:
+      path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+      branch: master
+      repo: https://github.com/jul-aro-aye/Taldea1_Api.git
+    id: Guztira
+    path: ErronkaApi/Modeloak/EskaeraProduktuak.cs
+    startLine: 17
+  assemblies:
+  - ErronkaApi
+  namespace: ErronkaApi.Modeloak
+  syntax:
+    content: public virtual decimal Guztira { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Overridable Property Guztira As Decimal
+  overload: ErronkaApi.Modeloak.EskaeraProduktuak.Guztira*
+references:
+- uid: ErronkaApi.Modeloak
+  commentId: N:ErronkaApi.Modeloak
+  href: ErronkaApi.html
+  name: ErronkaApi.Modeloak
+  nameWithType: ErronkaApi.Modeloak
+  fullName: ErronkaApi.Modeloak
+  spec.csharp:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Modeloak
+    name: Modeloak
+    href: ErronkaApi.Modeloak.html
+  spec.vb:
+  - uid: ErronkaApi
+    name: ErronkaApi
+    href: ErronkaApi.html
+  - name: .
+  - uid: ErronkaApi.Modeloak
+    name: Modeloak
+    href: ErronkaApi.Modeloak.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Id*
+  commentId: Overload:ErronkaApi.Modeloak.EskaeraProduktuak.Id
+  href: ErronkaApi.Modeloak.EskaeraProduktuak.html#ErronkaApi_Modeloak_EskaeraProduktuak_Id
+  name: Id
+  nameWithType: EskaeraProduktuak.Id
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera*
+  commentId: Overload:ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera
+  href: ErronkaApi.Modeloak.EskaeraProduktuak.html#ErronkaApi_Modeloak_EskaeraProduktuak_Eskaera
+  name: Eskaera
+  nameWithType: EskaeraProduktuak.Eskaera
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Eskaera
+- uid: ErronkaApi.Modeloak.Eskaera
+  commentId: T:ErronkaApi.Modeloak.Eskaera
+  parent: ErronkaApi.Modeloak
+  href: ErronkaApi.Modeloak.Eskaera.html
+  name: Eskaera
+  nameWithType: Eskaera
+  fullName: ErronkaApi.Modeloak.Eskaera
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Produktua*
+  commentId: Overload:ErronkaApi.Modeloak.EskaeraProduktuak.Produktua
+  href: ErronkaApi.Modeloak.EskaeraProduktuak.html#ErronkaApi_Modeloak_EskaeraProduktuak_Produktua
+  name: Produktua
+  nameWithType: EskaeraProduktuak.Produktua
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Produktua
+- uid: ErronkaApi.Modeloak.Produktua
+  commentId: T:ErronkaApi.Modeloak.Produktua
+  parent: ErronkaApi.Modeloak
+  href: ErronkaApi.Modeloak.Produktua.html
+  name: Produktua
+  nameWithType: Produktua
+  fullName: ErronkaApi.Modeloak.Produktua
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea*
+  commentId: Overload:ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea
+  href: ErronkaApi.Modeloak.EskaeraProduktuak.html#ErronkaApi_Modeloak_EskaeraProduktuak_Kantitatea
+  name: Kantitatea
+  nameWithType: EskaeraProduktuak.Kantitatea
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Kantitatea
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Egoera*
+  commentId: Overload:ErronkaApi.Modeloak.EskaeraProduktuak.Egoera
+  href: ErronkaApi.Modeloak.EskaeraProduktuak.html#ErronkaApi_Modeloak_EskaeraProduktuak_Egoera
+  name: Egoera
+  nameWithType: EskaeraProduktuak.Egoera
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Egoera
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa*
+  commentId: Overload:ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa
+  href: ErronkaApi.Modeloak.EskaeraProduktuak.html#ErronkaApi_Modeloak_EskaeraProduktuak_PrezioUnitarioa
+  name: PrezioUnitarioa
+  nameWithType: EskaeraProduktuak.PrezioUnitarioa
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.PrezioUnitarioa
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: ErronkaApi.Modeloak.EskaeraProduktuak.Guztira*
+  commentId: Overload:ErronkaApi.Modeloak.EskaeraProduktuak.Guztira
+  href: ErronkaApi.Modeloak.EskaeraProduktuak.html#ErronkaApi_Modeloak_EskaeraProduktuak_Guztira
+  name: Guztira
+  nameWithType: EskaeraProduktuak.Guztira
+  fullName: ErronkaApi.Modeloak.EskaeraProduktuak.Guztira
