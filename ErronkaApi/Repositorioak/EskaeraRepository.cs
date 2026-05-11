@@ -1,4 +1,4 @@
-﻿using ErronkaApi.DTOak;
+using ErronkaApi.DTOak;
 using ErronkaApi.Modeloak;
 using NHibernate.Linq;
 using NHSession = NHibernate.ISession;
@@ -67,6 +67,22 @@ namespace ErronkaApi.Repositorioak
         {
             return string.Equals(eskaera.egoera, "ordainketa_pendiente", StringComparison.OrdinalIgnoreCase) ||
                    string.Equals(eskaera.egoera, "itxita", StringComparison.OrdinalIgnoreCase);
+        }
+
+        private static string FormateatuErrorea(Exception ex)
+        {
+            var mezuak = new List<string>();
+            var unekoa = ex;
+
+            while (unekoa != null)
+            {
+                if (!string.IsNullOrWhiteSpace(unekoa.Message) && !mezuak.Contains(unekoa.Message))
+                    mezuak.Add(unekoa.Message);
+
+                unekoa = unekoa.InnerException;
+            }
+
+            return string.Join(" | ", mezuak);
         }
 
         private string LortuEskaerarenTxanda(NHSession session, Eskaera eskaera)
@@ -216,10 +232,21 @@ namespace ErronkaApi.Repositorioak
 
         private void ZiurtatuEskaerenTxandaZutabea(NHSession session)
         {
-            session.CreateSQLQuery(@"
-                ALTER TABLE eskaerak
-                ADD COLUMN IF NOT EXISTS txanda VARCHAR(20) NULL AFTER sortze_data")
-                .ExecuteUpdate();
+            var txandaColumnCount = Convert.ToInt32(session.CreateSQLQuery(@"
+                SELECT COUNT(*)
+                FROM information_schema.columns
+                WHERE table_schema = DATABASE()
+                  AND table_name = 'eskaerak'
+                  AND column_name = 'txanda'")
+                .UniqueResult());
+
+            if (txandaColumnCount == 0)
+            {
+                session.CreateSQLQuery(@"
+                    ALTER TABLE eskaerak
+                    ADD COLUMN txanda VARCHAR(20) NULL AFTER sortze_data")
+                    .ExecuteUpdate();
+            }
 
             session.CreateSQLQuery(@"
                 UPDATE eskaerak e
@@ -475,6 +502,7 @@ namespace ErronkaApi.Repositorioak
                     Eskaera = eskaera,
                     Produktua = produktua,
                     Kantitatea = produktuEskaria.Kantitatea,
+                    Egoera = "bidalita",
                     PrezioUnitarioa = produktua.prezioa,
                     Guztira = produktua.prezioa * produktuEskaria.Kantitatea
                 };
@@ -520,7 +548,7 @@ namespace ErronkaApi.Repositorioak
             return session.Query<EskaeraProduktuak>()
                 .Where(ep => ep.Eskaera.id == eskaeraId)
                 .ToList()
-                .Sum(ep => ep.Guztira);
+                .Sum(ep => ep.Guztira > 0 ? ep.Guztira : ep.PrezioUnitarioa * ep.Kantitatea);
         }
 
         private void EguneratuFakturaTotala(NHSession session, int eskaeraId)
@@ -696,7 +724,7 @@ namespace ErronkaApi.Repositorioak
             catch (Exception ex)
             {
                 tx.Rollback();
-                return (false, ex.Message, null, null);
+                return (false, FormateatuErrorea(ex), null, null);
             }
         }
 
@@ -887,7 +915,7 @@ namespace ErronkaApi.Repositorioak
             catch (Exception ex)
             {
                 tx.Rollback();
-                return (false, ex.Message, null);
+                return (false, FormateatuErrorea(ex), null);
             }
         }
 
@@ -1102,8 +1130,13 @@ namespace ErronkaApi.Repositorioak
                     var erreserba = session.Get<Erreserba>(eskaera.erreserbaId.Value);
                     if (erreserba != null)
                     {
-                        erreserba.egoera = "amaituta";
-                        session.Update(erreserba);
+                        session.CreateSQLQuery(@"
+                            UPDATE erreserbak
+                            SET egoera = :egoera
+                            WHERE id = :id")
+                            .SetParameter("egoera", "eginda")
+                            .SetParameter("id", erreserba.id)
+                            .ExecuteUpdate();
                     }
                 }
 
@@ -1123,7 +1156,7 @@ namespace ErronkaApi.Repositorioak
             catch (Exception ex)
             {
                 try { tx.Rollback(); } catch { }
-                return (false, "Arazoa faktura sortzean: " + ex.Message, null);
+                return (false, "Arazoa faktura sortzean: " + FormateatuErrorea(ex), null);
             }
         }
 

@@ -1,4 +1,4 @@
-﻿using ErronkaApi;
+using ErronkaApi;
 using ErronkaApi.Logak;
 using ErronkaApi.Middlewareak;
 using ErronkaApi.NHibernate;
@@ -58,10 +58,21 @@ using (var scope = app.Services.CreateScope())
     using var session = sessionFactory.OpenSession();
     using var tx = session.BeginTransaction();
 
-    session.CreateSQLQuery(@"
-        ALTER TABLE eskaerak
-        ADD COLUMN IF NOT EXISTS txanda VARCHAR(20) NULL AFTER sortze_data")
-        .ExecuteUpdate();
+    var txandaColumnCount = Convert.ToInt32(session.CreateSQLQuery(@"
+        SELECT COUNT(*)
+        FROM information_schema.columns
+        WHERE table_schema = DATABASE()
+          AND table_name = 'eskaerak'
+          AND column_name = 'txanda'")
+        .UniqueResult());
+
+    if (txandaColumnCount == 0)
+    {
+        session.CreateSQLQuery(@"
+            ALTER TABLE eskaerak
+            ADD COLUMN txanda VARCHAR(20) NULL AFTER sortze_data")
+            .ExecuteUpdate();
+    }
 
     session.CreateSQLQuery(@"
         UPDATE eskaerak e
