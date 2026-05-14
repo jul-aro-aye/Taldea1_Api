@@ -9,6 +9,61 @@ namespace ErronkaApi.Testak
 {
     public class MahaiaKontrollerTestak
     {
+        // Testak LortuMahaiak metodoarentzat
+        [Fact]
+        public void LortuMahaiak_ErroreaGertatzenBada_500ItzuliBeharDu()
+        {
+            // Arrange
+            var mockRepo = new Mock<MahaiaRepository>();
+            mockRepo.Setup(r => r.LortuMahaiak(null, null))
+                    .Returns((false, "Errorea gertatu da", null as List<MahaiaDTO>));
+
+            var controller = new MahaiakController(mockRepo.Object);
+
+            // Act
+            var result = controller.LortuMahaiak();
+
+            // Assert
+            var status = Assert.IsType<ObjectResult>(result);
+            Assert.Equal(500, status.StatusCode);
+
+            var body = Assert.IsType<ErantzunaDTO<string>>(status.Value);
+            Assert.Equal(500, body.Code);
+            Assert.Equal("Errorea gertatu da", body.Message);
+        }
+
+        [Fact]
+        public void LortuMahaiak_DatuakDaudenean_200EtaMahaienZerrendaItzuliBeharDu()
+        {
+            // Arrange
+            var data = new List<MahaiaDTO>
+            {
+                new MahaiaDTO
+                {
+                    Id = 1,
+                    Zenbakia = 5,
+                    kapazitatea = 4
+                }
+            };
+
+            var mockRepo = new Mock<MahaiaRepository>();
+            mockRepo.Setup(r => r.LortuMahaiak(null, null))
+                    .Returns((true, null, data));
+
+            var controller = new MahaiakController(mockRepo.Object);
+
+            // Act
+            var result = controller.LortuMahaiak();
+
+            // Assert
+            var ok = Assert.IsType<OkObjectResult>(result);
+            var body = Assert.IsType<ErantzunaDTO<MahaiaDTO>>(ok.Value);
+
+            Assert.Equal(200, body.Code);
+            Assert.Equal("Mahaiak lortu dira", body.Message);
+            Assert.Single(body.Datuak);
+        }
+
         // Testak LortuMahaiLibre metodoarentzat
         [Fact]
         public void LortuMahaiLibre_ErroreaGertatzenBada_500ItzuliBeharDu()

@@ -74,6 +74,32 @@ namespace ErronkaApi.Testak
             Assert.IsType<OkObjectResult>(result);
         }
 
+        // LortuEskaeraAktiboaMahaika(int mahaiaId, DateTime? data = null, string? txanda = null)
+
+        [Fact]
+        public void LortuEskaeraAktiboaMahaika_NotFoundItzultzenDu_EskaeraAktiborikEzDagoenean()
+        {
+            _repoMock.Setup(r => r.LortuEskaeraAktiboaMahaika(1, null, null))
+                .Returns((false, "Ez da aurkitu", null as EskaeraDTO));
+
+            var result = _controller.LortuEskaeraAktiboaMahaika(1);
+
+            Assert.IsType<NotFoundObjectResult>(result);
+        }
+
+        [Fact]
+        public void LortuEskaeraAktiboaMahaika_OkItzultzenDu_EskaeraAktiboaDagoenean()
+        {
+            var eskaera = new EskaeraDTO { Id = 1 };
+
+            _repoMock.Setup(r => r.LortuEskaeraAktiboaMahaika(1, null, null))
+                .Returns((true, null, eskaera));
+
+            var result = _controller.LortuEskaeraAktiboaMahaika(1);
+
+            Assert.IsType<OkObjectResult>(result);
+        }
+
         // LortuEskaeraProduktuak(int eskaeraId)
 
         [Fact]
@@ -224,6 +250,34 @@ namespace ErronkaApi.Testak
                 .Returns((true, null));
 
             var result = _controller.OrdainduEskaera(1);
+
+            Assert.IsType<OkObjectResult>(result);
+        }
+
+        // OrdainduEskaeraDeskontuarekin(int eskaeraId, [FromBody] EskaeraOrdainduDTO dto)
+
+        [Fact]
+        public void OrdainduEskaeraDeskontuarekin_NotFoundItzultzenDu_EskaeraExistitzenEzDenean()
+        {
+            var dto = new EskaeraOrdainduDTO { DeskontuKodea = "UDA", DeskontuPortzentaia = 10 };
+
+            _repoMock.Setup(r => r.OrdaintzeraBidali(1, dto))
+                .Returns((false, "Ez da aurkitu"));
+
+            var result = _controller.OrdainduEskaeraDeskontuarekin(1, dto);
+
+            Assert.IsType<NotFoundObjectResult>(result);
+        }
+
+        [Fact]
+        public void OrdainduEskaeraDeskontuarekin_OkItzultzenDu_EskaeraOrdainketaraBidaltzenDenean()
+        {
+            var dto = new EskaeraOrdainduDTO { DeskontuKodea = "UDA", DeskontuPortzentaia = 10 };
+
+            _repoMock.Setup(r => r.OrdaintzeraBidali(1, dto))
+                .Returns((true, null));
+
+            var result = _controller.OrdainduEskaeraDeskontuarekin(1, dto);
 
             Assert.IsType<OkObjectResult>(result);
         }
